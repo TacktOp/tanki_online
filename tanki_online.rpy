@@ -13,10 +13,10 @@ init:
 
 
 #region name
-    $ vladM   = Character (u'ВладМ.', color = "#60ca3f", what_color = "#FFFFFF")
-    $ vladP   = Character (u'ВладП.', color = "#76d4ff", what_color = "#FFFFFF")
-    $ ura     = Character (u'Юра',    color = "#FF8C00", what_color = "#FFFFFF")
-    $ siava   = Character (u'Сява',   color = "#cc5233", what_color = "#FFFFFF")
+    $ vladM   = Character (u'ВладМ', color = "#60ca3f", what_color = "#FFFFFF")
+    $ vladP   = Character (u'ВладП', color = "#76d4ff", what_color = "#FFFFFF")
+    $ ura     = Character (u'Юра',   color = "#FF8C00", what_color = "#FFFFFF")
+    $ siava   = Character (u'Сява',  color = "#cc5233", what_color = "#FFFFFF")
 
 #endregion
 
