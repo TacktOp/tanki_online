@@ -8,16 +8,20 @@ init:
     image image_ura       = "image/Юрапнг.png"
     image image_vladP     = "image/япнг.png"
     image image_cardoroga = "image/машина едем.jpg"
-    image image_DvladM = "image/владк.png"
-    image image_Dii = "image/сявак.png"
-    image image_Dura = "image/юрак.png"
-    image image_DvladP = "image/япнгк.png"
+    image image_DvladM    = "image/владк.png"
+    image image_Dii       = "image/сявак.png"
+    image image_Dura      = "image/юрак.png"
+    image image_DvladP    = "image/япнгк.png"
 
 #endregion
 
 
 #region sound
-    $ sound_ = ""
+    $ sound_ptichi                   = "sound/птици.mp3"
+    $ sound_carStart                 = "sound/car-start.mp3"
+    $ sound_carEdet                  = "sound/car-edet.mp3"
+    $ sound_zvukiPrirodyKapliDozhdya = "sound/zvuki-prirody-kapli-dozhdya.mp3"
+
 #endregion
 
 
