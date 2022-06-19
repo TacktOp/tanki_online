@@ -12,7 +12,7 @@ init:
     image image_Dii       = "mods/tanki_online/image/сявак.png"
     image image_Dura      = "mods/tanki_online/image/юрак.png"
     image image_DvladP    = "mods/tanki_online/image/япнгк.png"
-    image image_carVLesy2 = "mods/tanki_online/image/дорогша.jpg"
+    image image_carVLesy2 = "mods/tanki_online/image/дорошга.jpg"
     image image_carVLesy1 = "mods/tanki_online/image/едем.jpg"
     image image_pole      = "mods/tanki_online/image/поле.jpg"
 
@@ -20,10 +20,10 @@ init:
 
 
 #region sound
-    $ sound_ptichi                   = "sound/птици.mp3"
-    $ sound_carStart                 = "sound/car-start.mp3"
-    $ sound_carEdet                  = "sound/car-edet.mp3"
-    $ sound_zvukiPrirodyKapliDozhdya = "sound/zvuki-prirody-kapli-dozhdya.mp3"
+    $ sound_ptichi                   = "mods/tanki_online/sound/птици.mp3"
+    $ sound_carStart                 = "mods/tanki_online/sound/car-start.mp3"
+    $ sound_carEdet                  = "mods/tanki_online/sound/car-edet.mp3"
+    $ sound_zvukiPrirodyKapliDozhdya = "mods/tanki_online/sound/zvuki-prirody-kapli-dozhdya.mp3"
 
 #endregion
 
@@ -107,7 +107,7 @@ label doroga:
     name_ura "Да они тупые как пробки, особенно девочки{w}, вроде оддинадцатый класс, а одеваются как шалавы."
     name_vladP "Хахахах{w}, ну так бомби, подцепишь какую-нибудь там."
     name_ura "Ты даун?{w} Я не настолько конченый{w}, да и в тюрьму я не хочу.{w} Да и камон{w}, это же всё ещё дети."
-    name_ii "Ну поживём увидем."
+    name_ii "Ну поживём увидим."
     name_ura "Иди-ка нахуй."
     name_vladP "Хахахха{w}, ладно, погнали уже."
     hide image_ura
@@ -143,3 +143,9 @@ label doroga:
     name_ura "А может в пизду{w}, потом выпью{w}, хмм."
     stop music fadeout 0.5
     
+    menu:
+        "выпить таблетки":
+            #block of code to run
+        "не пить таблетки":
+            #block of code to run
+        
