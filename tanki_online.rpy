@@ -4,7 +4,7 @@ init:
 
 #region image
     image image_vladM     = "image/владпнг.png"
-    image image_siava     = "image/сявапнг.png"
+    image image_ii        = "image/сявапнг.png"
     image image_ura       = "image/Юрапнг.png"
     image image_vladP     = "image/япнг.png"
     image image_cardoroga = "image/машина едем.jpg"
