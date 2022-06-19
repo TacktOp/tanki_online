@@ -8,10 +8,6 @@ init:
     image image_ura       = "mods/tanki_online/image/Юрапнг.png"
     image image_vladP     = "mods/tanki_online/image/япнг.png"
     image image_cardoroga = "mods/tanki_online/image/машина едем.jpg"
-    image image_DvladM    = "mods/tanki_online/image/владк.png"
-    image image_Dii       = "mods/tanki_online/image/сявак.png"
-    image image_Dura      = "mods/tanki_online/image/юрак.png"
-    image image_DvladP    = "mods/tanki_online/image/япнгк.png"
     image image_carVLesy2 = "mods/tanki_online/image/дорошга.jpg"
     image image_carVLesy1 = "mods/tanki_online/image/едем.jpg"
     image image_pole      = "mods/tanki_online/image/поле.jpg"
@@ -57,37 +53,15 @@ label doroga:
     th "Я был за рулём{w}, а Сява сидел рядом и через мой ноут, ковырял нашего бота."
     th "Юра же, читал книгу, иногда посмеиваясь."
 
-    show image_DvladP with dissolve
     name_vladP "Блять, ты уже минут сорок хихикаешь, что ты читаешь там?"
-    hide image_DvladP
-    show image_Dura 
-    with dspr
     name_ura "Смари"
-    hide image_Dura with dspr
     th "Юра показал в зеркало заднего вида, книгу \"Феменизм наглядно 2\"."
-    show image_DvladP with dspr
     name_vladP "Бляяяя чувак{w}, нахуй ты взял с собой это чудовище?"
-    hide image_DvladP 
-    show image_Dura 
-    with dspr
     name_ura "Всё равно в дороге делать нечего."
-    hide image_Dura  
-    show image_DvladP 
-    with dspr
     name_vladP "Так всё, я заебался{w}, смените меня кто нибудь."
-    hide image_DvladP
-    show image_Dura
-    with dspr
     name_ura "Вот пусть этот потлатый едет."
-    hide image_Dura
-    show image_Dii
-    with dspr
     name_ii "Не думаю что это хорошая идея{w}, не хочу откиснуть от того что сонный Влад въебёт нас в \"Камаз\"."
-    hide image_Dii
-    show image_Dura
-    with dspr
     name_ura "Блять, ладно{w}, сейчас из зоны лесополосы выедем и стопай."
-    hide image_Dura with dspr
     th "Ехали еще минут двадцать{w}, к моменту остановки, тучи разошлись.{w} Мы решили воспользоваться моментом и похавать."
 
     stop music fadeout 0.5
@@ -123,13 +97,8 @@ label doroga:
     scene image_carVLesy1 with dissolve
     th "Не успели мы проехать и километра{w}, как мы услышали посапывание Сявы, который наевся и спит."
     th "Вот погода опять начала хериться{w}, и палящая жара сменилась приятной свежестью."
-    show image_DvladP with dissolve
     name_vladP "Чувак, сам проедешь?{w} А то меня в сон клонит, вздремнуть бы по хуйне."
-    hide image_DvladP
-    show image_Dura
-    with dspr
     name_ura "Да всё оки{w}, спи."
-    hide image_Dura with dissolve
 
     show blink
     th "Я заснул сразу же как закрыл глаза."
