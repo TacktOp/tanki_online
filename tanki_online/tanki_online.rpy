@@ -48,6 +48,7 @@ init:
 
 label doroga:
     scene image_cardoroga with dissolve
+    play music sound_carEdet fadein 0.5
     th "Запах старого салона в нашей Ниве очень сильно бил мне по носу, спасал только запах сырости с улицы, где на протяжении всего дня проливали дожди."
     th "Окна в машине пришлось опустить{w}, что бы не умереть от духоты."
     th "Огромных усилий стоило прокрутить эти старые ручки{w}, и теперь казалось, что опустить стекла мы уже не сможем."
@@ -89,6 +90,8 @@ label doroga:
     hide image_Dura with dspr
     th "Ехали еще минут двадцать{w}, к моменту остановки, тучи разошлись.{w} Мы решили воспользоваться моментом и похавать."
 
+    stop music fadeout 0.5
+    play music sound_ptichi fadein 0.5
     scene image_pole with dissolve
     show image_ura with dissolve
     name_ura "Сява, поставь воду кипятиться."
@@ -111,13 +114,32 @@ label doroga:
     hide image_ii
     hide image_vladP
     with dissolve
+    stop music fadeout 0.5
+    play sound sound_carStart fadein 0.5
     th "На ходу допив жижку от говяжего дошика, я упал на переднее сиденье, а Юра кряхтя уселся за руль."
+    stop sound fadeout 0.5
+
+    play music sound_zvukiPrirodyKapliDozhdya fadein 0.5
+    scene image_carVLesy1 with dissolve
     th "Не успели мы проехать и километра{w}, как мы услышали посапывание Сявы, который наевся и спит."
     th "Вот погода опять начала хериться{w}, и палящая жара сменилась приятной свежестью."
+    show image_DvladP with dissolve
     name_vladP "Чувак, сам проедешь?{w} А то меня в сон клонит, вздремнуть бы по хуйне."
+    hide image_DvladP
+    show image_Dura
+    with dspr
     name_ura "Да всё оки{w}, спи."
+    hide image_Dura with dissolve
+
+    show blink
     th "Я заснул сразу же как закрыл глаза."
+    scene image_carVLesy2 with dissolve
+    hide blink
+    show unblink
+
     th "Пока мы все спали, Юра двигался по узкой дороге без асфальта, которая проходила прям в чаще леса."
     th "Он взглянул на время{w}, было пол пятого."
     name_ura "Блять{w}, таблетки же нужно выпить{w}.... сука они в багажнике, это надо блять останавливаться ещё."
     name_ura "А может в пизду{w}, потом выпью{w}, хмм."
+    stop music fadeout 0.5
+    
