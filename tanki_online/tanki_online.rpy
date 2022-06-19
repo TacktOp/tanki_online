@@ -3,15 +3,18 @@ init:
     $ mods ["doroga"] = u"tanki_online"
 
 #region image
-    image image_vladM     = "image/владпнг.png"
-    image image_ii        = "image/сявапнг.png"
-    image image_ura       = "image/Юрапнг.png"
-    image image_vladP     = "image/япнг.png"
-    image image_cardoroga = "image/машина едем.jpg"
-    image image_DvladM    = "image/владк.png"
-    image image_Dii       = "image/сявак.png"
-    image image_Dura      = "image/юрак.png"
-    image image_DvladP    = "image/япнгк.png"
+    image image_vladM     = "mods/tanki_online/image/владпнг.png"
+    image image_ii        = "mods/tanki_online/image/сявапнг.png"
+    image image_ura       = "mods/tanki_online/image/Юрапнг.png"
+    image image_vladP     = "mods/tanki_online/image/япнг.png"
+    image image_cardoroga = "mods/tanki_online/image/машина едем.jpg"
+    image image_DvladM    = "mods/tanki_online/image/владк.png"
+    image image_Dii       = "mods/tanki_online/image/сявак.png"
+    image image_Dura      = "mods/tanki_online/image/юрак.png"
+    image image_DvladP    = "mods/tanki_online/image/япнгк.png"
+    image image_carVLesy2 = "mods/tanki_online/image/дорогша.jpg"
+    image image_carVLesy1 = "mods/tanki_online/image/едем.jpg"
+    image image_pole      = "mods/tanki_online/image/поле.jpg"
 
 #endregion
 
@@ -41,11 +44,10 @@ init:
         ease 0.10 pos (25, 25)
         ease 0.10 pos (0, 0)
         ease 0.10 pos (-25, 25)
-    repeat
+        repeat
 
 label doroga:
     scene image_cardoroga with dissolve
-
     th "Запах старого салона в нашей Ниве очень сильно бил мне по носу, спасал только запах сырости с улицы, где на протяжении всего дня проливали дожди."
     th "Окна в машине пришлось опустить{w}, что бы не умереть от духоты."
     th "Огромных усилий стоило прокрутить эти старые ручки{w}, и теперь казалось, что опустить стекла мы уже не сможем."
@@ -53,21 +55,49 @@ label doroga:
     th "Иногда я разбирал слова в песнях Влада{w}, которые с особой громкостью играли у него в наушниках{w}, пока сам он дремал без задних ног."
     th "Я был за рулём{w}, а Сява сидел рядом и через мой ноут, ковырял нашего бота."
     th "Юра же, читал книгу, иногда посмеиваясь."
+
+    show image_DvladP with dissolve
     name_vladP "Блять, ты уже минут сорок хихикаешь, что ты читаешь там?"
+    hide image_DvladP
+    show image_Dura 
+    with dspr
     name_ura "Смари"
+    hide image_Dura with dspr
     th "Юра показал в зеркало заднего вида, книгу \"Феменизм наглядно 2\"."
+    show image_DvladP with dspr
     name_vladP "Бляяяя чувак{w}, нахуй ты взял с собой это чудовище?"
+    hide image_DvladP 
+    show image_Dura 
+    with dspr
     name_ura "Всё равно в дороге делать нечего."
+    hide image_Dura  
+    show image_DvladP 
+    with dspr
     name_vladP "Так всё, я заебался{w}, смените меня кто нибудь."
+    hide image_DvladP
+    show image_Dura
+    with dspr
     name_ura "Вот пусть этот потлатый едет."
+    hide image_Dura
+    show image_Dii
+    with dspr
     name_ii "Не думаю что это хорошая идея{w}, не хочу откиснуть от того что сонный Влад въебёт нас в \"Камаз\"."
+    hide image_Dii
+    show image_Dura
+    with dspr
     name_ura "Блять, ладно{w}, сейчас из зоны лесополосы выедем и стопай."
+    hide image_Dura with dspr
     th "Ехали еще минут двадцать{w}, к моменту остановки, тучи разошлись.{w} Мы решили воспользоваться моментом и похавать."
+
+    scene image_pole with dissolve
+    show image_ura with dissolve
     name_ura "Сява, поставь воду кипятиться."
+    show image_ii at fleft with dissolve
     name_ii "Ща оформлю."
     th "Мы расстелили около подсолнухов большой плед и разложили на нем дошики и хлеб."
     name_ii "Может буданём алкаша, что бы тоже поел."
     name_ura "Да ненадо{w}, пусть спит."
+    show image_vladP at right with dissolve
     name_vladP "Кста, че у тебя по практике Юра?"
     name_ura "Да эти мудаки захотели меня засунуть к старшим классам, я отказался."
     name_ii "Че так?"
@@ -77,6 +107,10 @@ label doroga:
     name_ii "Ну поживём увидем."
     name_ura "Иди-ка нахуй."
     name_vladP "Хахахха{w}, ладно, погнали уже."
+    hide image_ura
+    hide image_ii
+    hide image_vladP
+    with dissolve
     th "На ходу допив жижку от говяжего дошика, я упал на переднее сиденье, а Юра кряхтя уселся за руль."
     th "Не успели мы проехать и километра{w}, как мы услышали посапывание Сявы, который наевся и спит."
     th "Вот погода опять начала хериться{w}, и палящая жара сменилась приятной свежестью."
