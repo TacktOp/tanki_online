@@ -114,7 +114,13 @@ label doroga:
     
     menu:
         "выпить таблетки":
-            #block of code to run
+            vipil_tabletki()
         "не пить таблетки":
-            #block of code to run
+            ne_vipil_tabletki()
+
+
+def vipil_tabletki():
+    
+
+def ne_vipil_tabletki():
         
