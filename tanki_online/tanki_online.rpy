@@ -46,10 +46,10 @@ init:
 
     transform begg:
         zoom 1.05 anchor (48, 27)
-        ease 0.10 pos (0,0)
-        ease 0.10 pos (25, 25)
-        ease 0.10 pos (0, 0)
-        ease 0.10 pos (-25, 25)
+        eate 0.10 pos (0,0)
+        eate 0.10 pos (25, 25)
+        eate 0.10 pos (0, 0)
+        eate 0.10 pos (-25, 25)
         repeat
 
 label doroga:
@@ -129,7 +129,6 @@ label doroga:
             jump ne_vipil_tabletki
 
 
-
 label akt1:
     scene image_cardoroga2 with dissolve
     play music sound_carEdet fadein 0.5
@@ -144,22 +143,22 @@ label akt1:
     play music sound_ptichi fadein 0.5
     scene image_pole2 with dissolve
     th "Юра стопнул тачку"
-    show image_vladM as fleft with dissolve
+    show image_vladM at fleft with dissolve
     name_vladM "Пипяо{w}, только этого нам не хватало"
     th "Юра открыл капот машины, оттуда шёл дым как в гта"
-    show image_vladP as left with dissolve
+    show image_vladP at left with dissolve
     name_vladP "Блять{w}, думаю всё очень хуёво{w}, че стопать будем?"
     show image_ii with dissolve
-    show image_ura as cright with dissolve
+    show image_ura at cright with dissolve
     name_ii "Ну выбора у нас особого нет"
     th "Погода как будто менялась под тот пиздец который происходит, казалось, что стоит начаться ливню и с нами произойдёт какой-то кромешный пиздец"
     th "Небо полностью покрылось тучами{w}, дул уже не приятно прохладный, а весьма холодный ветер, вызывающий муражки"
     th "Влад подобно шлюхи с трассы подошел в дороге и вытянул руку"
     th "Всем было на нас настолько похуй{w}, что иногда было заметно что водители даже не смотрели в нашу сторону"
-    th "Прошло минут тридцать{w}, и нам улыбнулась удача{w}, перед нами остановился гурзовик"
+    th "Прошло минут тридцать{w}, и нам улыбнулась удача{w}, перед нами остановился грузовик"
     name_vladP "Ебать ну наконец-то"
     th "Подозрительно погода начала падлить, начинался дождь"
-    show image_otechMatveia as fright with dissolve
+    show image_otechMatveia at fright with dissolve
     myzik "Ну че пацаны, встали?"
     name_ura "Есть такое"
     name_ii "Было бы классно что бы вы нас подцепили{w}, можем заплатить"
@@ -167,8 +166,12 @@ label akt1:
     name_vladM "Я хочу"
     th "Влад в пару мгновений запрыгнул на пассажирское сиденье огромной фуры{w}, а мы с кентами залетели в тачку"
     stop music fadeout 0.5
+
     play music sound_zvukEzdi fadein 0.5
-    scene image_fyra with dissolve
+    scene image_fyra
+    show image_vladM at fleft
+    show image_otechMatveia at fright 
+    with dissolve
     myzik "Вас до куда?"
     name_vladM "Тут где-нибудь есть мотель и сто?"
     myzik "Да в паре часов езды есть комплекс мотелей, там же и сто"
@@ -198,12 +201,11 @@ label akt1:
     play music sound_sverchki fadein 0.5
     scene image_motel with dissolve
     show image_ii
-    show image_ura as right 
-    show image_vladM as fright
-    show image_vladP as left
+    show image_ura at right
+    show image_vladP at left
     with dissolve
     name_vladP "Так{w}, тачка вроде всё{w}, я в ахуе что там была такая мелочь"
-    name_ura "Да не говори{w}, еста, а Влад где?"
+    name_ura "Да не говори{w}, кста, а Влад где?"
     name_ii "Вроде бы он расплачивается с водилой{w}, но чёт долго"
     name_ura "Надо глянуть, вдруг случилось что то"
     th "Они начали подходить к машине и приближаясь{w}, всё чётче слышали истошные попытки вздохнуть и какую-то возню"
@@ -216,6 +218,7 @@ label akt1:
     name_ura "Ты чё мудила, ахуел?"
     th "Не прошло и секунды как Юра со всей силы дал лежащему на земле мужику под дых"
     name_vladP "Всё норм чувак?"
+    show image_vladM at fleft with dissolve
     name_vladM "*тяжело дыша* да{w}, пидор ёбаный"
     th "Мужик попытался что-то сказать{w}, но Сява предотвратил это, пнув его по голове и вырубив его нахер"
     stop music fadeout 0.5
@@ -225,10 +228,10 @@ label akt1:
     stop music fadeout 0.5
     play music sound_sverchki fadein 0.5
     scene image_prichep with dissolve
-    show image_ii as right 
+    show image_ii at right 
     show image_ura 
-    show image_vladM as left
-    show image_vladP as fright
+    show image_vladM at left
+    show image_vladP at fright
     with dissolve
     th "Мы обошли машину и открыли двери огромного, длинного прицепа"
     th "Перед нами появилась картина{w}, около двухста ноутбуков, коробки с которыми, лежали ровно друг на друге в несколько рядов"
@@ -237,9 +240,9 @@ label akt1:
     th "В эту же секунду Сява подал Юре стопку из трёх ноутбуков"
     name_ura "Балдёж{w}, ебать они кста тяжёленькие"
     name_ii "Да{w}, марка наверно такая"
-    name_vldaM "Так{w}, думаю пока он не очнулся, было бы неплохой идеей свалить прямо сейчас{w}, тем более тачка готова{w}, поведу - я{w}, мне сейчас уж точно не до сна"
+    name_vladM "Так{w}, думаю пока он не очнулся, было бы неплохой идеей свалить прямо сейчас{w}, тем более тачка готова{w}, поведу - я{w}, мне сейчас уж точно не до сна"
     name_ura "Ну поехали"
-    th "Мы сели в тачку{w}, и понали прочь от этого мотеля"
+    th "Мы сели в тачку{w}, и погнали прочь от этого мотеля"
     
     play music sound_carEdet fadein 0.5
     scene image_pole3 with dissolve
@@ -267,6 +270,7 @@ label akt1:
     name_vladP "Пиздец{w}, балдёж"
     name_ura "Как варик остановиться здесь и поискать людей{w}, может у них есть навик, ну на крайняк карта"
     name_vladM "Оки{w}, стопаю"
+    stop music fadeout 0.5
     
     scene bg ext_camp_entrance_day with dissolve
     th "Мы остановились у остановки и перед нами развернулись большие ворота ведущие на какую-то территорию"
@@ -291,27 +295,27 @@ label akt1:
     th "Мы вошли во внутрь"
     scene bg ext_clubs_day with dissolve
     th "Буквально через пятьдесят метров слева словно из-под зесли выросло небольшое одноэтажное здание"
-    show cg d1_grasshopper with dissolve
+    show cg d1_gratshopper with dissolve
     th "Перед нами открылась картина{w}, малолетняя пиздючка пугала фиолетововолосую девочку кузнечиком"
     un "Ииии-иииии-иии"
-    hide cg d1_grasshopper with dissolve
-    show un scared pioneer as left 
-    show us laugh pioneer as right
+    hide cg d1_gratshopper with dissolve
+    show un scared pioneer at left 
+    show us laugh pioneer at right
     with dissolve
     name_ii "ЭЭЭ{w}, АЛО{w}, ЗАЛУПА МЕЛКАЯ"
-    show us fear pioneer as right with dspr 
+    show us fear pioneer at right with dspr 
     th "Малявка резко остановилась"
     name_ii "Убери от неё это чудовище ебаное"
-    show us angry pioneer as right with dspr 
+    show us angry pioneer at right with dspr 
     us "А ты вообще кто?"
     name_vladP "Насиловать будем"
-    show us fear pioneer as right with dspr 
+    show us fear pioneer at right with dspr 
     th "Она испугалась и убежала, сверкая пятками"
-    hide us fear pioneer with dsrp
-    show un shy pioneer as left with dspr
+    hide us fear pioneer with dspr
+    show un shy pioneer at left with dspr
     un "Сс..с{w}..спасибо"
     name_ii "Блять да что за дети пошли{w}, ведут себя как черти, если ещё доебётся обращайся"
-    show un smile pioneer as left with dspr
+    show un smile pioneer at left with dspr
     th "Её глаза засверкали"
     un "Хорошо{w}, ещё раз спасибо"
     th "И она убежала в ту же сторону что и эта пиздень"
@@ -357,7 +361,7 @@ label akt1:
     name_ura "Это Влад"
     sl "Ого{w}, вас двое"
     name_vladP "А тебя как?"
-    sl "Вообще{w}, полное имя Славяна, но все меня Славей звоут"
+    sl "Вообще{w}, полное имя Славяна, но все меня Славей зовут"
     name_vladP "Ебать прикол{w}, у нас тоже свой Славя есть{w}, только с хуем"
     show sl smile2 swim with dspr
     th "Она смущённо усмехнулась"
@@ -367,17 +371,17 @@ label akt1:
     th "Они покраснела{w}, а я понял что кажется я - даун"
     
     scene bg ext_square_day 
-    show dv normal pioneer as left
-    show us normal pioneer as right
+    show dv normal pioneer at left
+    show us normal pioneer at right
     with dissolve
     th "Мы вышли на площадь{w}, по середине которой стояла статуя пионера"
     th "Там мы обнаружили две ахуевшие дуры{w}, с которыми нам уже посчастливилось стретиться"
     dv "О{w}, это же вы"
-    show us fear pioneer as right with dspr
+    show us fear pioneer at right with dspr
     us "Это эти насильники!"
     dv "Чего???"
     name_ura "Нам надо было как то прогнать эту падаль{w}, вот и сказали что ща на четверых растянем"
-    show dv angry pioneer as left with dspr
+    show dv angry pioneer at left with dspr
     dv "Вы блять больные!"
     name_vladP "ахах..хахахаха...{w}ХАХАХАХХАХАХ"
     th "Для зловещности{w}, я засмеялся как психопат"
@@ -385,9 +389,13 @@ label akt1:
     show sl normal pioneer close with dissolve
     sl "О{w}, вы уже здесь"
     sl "Ольга Дмитриевна свободна{w}, пойдём до её домика"
+
     scene bg ext_house_of_mt_day with dissolve
     th "Через пару минут мы оказались у треугольного домика, вокруг которого росла черёмуха"
-    show mt normal pioneer with dissolve
+    
+    scene bg int_house_of_mt_day
+    show mt normal pioneer 
+    with dissolve
     th "Мы вошли{w}, перед нами стояла девушка лет двадцати пяти{w}, Юра заприметил на полу мусорное ведро, а рядом с ним лежала упаковка из под шоколадки{w}, нахой он это сделал незнаю{w}, но он поднял бумажку, смял её и выбросил в мусорку"
     mt "Привет{w}, вы новенькие?"
     name_vladP "ДА БЛЯТЬ НЕТ{w}, у нас навигатор...сломался{w}, нам нужна карта"
@@ -473,7 +481,7 @@ label akt1:
     th "Влад шёл по лагерю сам не свой{w}, эта тревога не покидала его"
     th "Тут он почувствовал сильный толчок в спину и упал на траву"
     dv "Опять ты!"
-    name_vladM "Сука!{w} Куда ты вечно торопишься?{w} Почему за этот день ты уже второй раз сшибаешь меня с ног"
+    name_vladM "Сука!{w} Куда ты вечно торопишься?{w} Почему за этот день ты уже второй раз сшибаешь меня с ног?"
     dv "Я убегаю"
     name_vladM "Блять{w}, от кого?"
     dv "Я кое-что спёрла из столовой"
@@ -535,7 +543,7 @@ label akt1:
     name_vladP "Трогай Юржи"
     th "Юра завёл машину и мы поехали"
     name_vladM "Пацаны поверьте{w}, нам не стоит вот так просто уезжать"
-    th "Мы ехали уже минут двадцать{w}, я буду выспашимся, почему-то зевал, а Сява с Владом и вовсе давали храпака"
+    th "Мы ехали уже минут двадцать{w}, я будучи выспашимся, почему-то зевал, а Сява с Владом и вовсе давали храпака"
     name_vladP "Чувак{w}, я чуть вздремну{w}, смотри не усни"
     th "Меня вырубило сразу{w}, но я даже не подозревал, что Юра прям за рулём, уснёт спустя буквально пару минут"
     th "Его глаза медленно закрывались, и тут..."
@@ -581,7 +589,7 @@ label akt1:
     name_vladM "Сука{w}, мы теперь навсегда здесь?"
     name_vladP "Без паники{w}, мы здесь точно не останемся, что нибудь придумаем"
     name_ura "Итак{w}, какие варианты?{w} Попробуем все"
-    name_ii "Модет нам нужно
+    name_ii "Может нам нужно
     прожить день по их правилам?{w} Стать пионерами"
     name_ura "Как вариант{w}, ещё идеи"
     name_vladP "У меня есть варик, но безопасный ли он{w}, я хуй знает"
@@ -596,7 +604,7 @@ label akt1:
     sl "Это прекрасно{w}, тогда пройдём со мной к Ольге Дмитриевне{w}, она ознакомит вас со всем"
     th "Мы сами не верили в то что делаем, но выбора у нас особо не было"
     mt "Здравствуйте ребята{w}, теперь вы пионеры, прошу ознакомиться с правилами и расписанием"
-    th "Расписание было типичное, зарядка, обеды, ужины, общественно-полезные работыи тому подобное"
+    th "Расписание было типичное, зарядка, обеды, ужины, общественно-полезные работы и тому подобное"
     th "Мы пошли к пристани"
     name_ii "Не мужики{w}, идея липа{w}, я хуйню придумал, я жалею что предложил"
     name_ura "Хахахах{w}, тебя условие подъёма в семь не устроило?"
@@ -648,7 +656,7 @@ label akt1:
     name_vladP "Хахаха{w}, балдёж"
     name_ura "Пиздец вы кончено"
     name_ura "О{w}, отсюда она карту нам доставала"
-    th "Сказал Юра, открыв ящик втроенный в стол"
+    th "Сказал Юра, открыв ящик встроенный в стол"
     name_ii "А сама карта где?"
     name_vladM "Ну мы же её в наш ящик положили"
     th "И тут время остановились, мы с парнями
