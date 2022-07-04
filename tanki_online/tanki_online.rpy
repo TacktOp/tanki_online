@@ -123,9 +123,9 @@ label doroga:
     
     menu:
         "выпить таблетки":
-            akt1
+            jump akt1
         "не пить таблетки":
-            ne_vipil_tabletki
+            jump ne_vipil_tabletki
 
 
 
