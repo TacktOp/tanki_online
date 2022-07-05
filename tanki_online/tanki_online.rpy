@@ -112,10 +112,9 @@ label doroga:
 
     show blink
     th "Я заснул сразу же как закрыл глаза."
+    scene image_carVLesy2
     hide blink
-    scene image_carVLesy2 with dissolve
     show unblink
-
     th "Пока мы все спали, Юра двигался по узкой дороге без асфальта, которая проходила прям в чаще леса."
     th "Он взглянул на время{w}, было пол пятого."
     name_ura "Блять{w}, таблетки же нужно выпить{w}.... сука они в багажнике, это надо блять останавливаться ещё."
@@ -140,6 +139,7 @@ label akt1:
     th "Не успел Влад договорить, как нас заставил заткнуться жёсткий стук и сильный скрежет"
     name_vladP "Какого хуя?{w} Что это?"
     stop music fadeout 0.5
+
     play music sound_ptichi fadein 0.5
     scene image_pole2 with dissolve
     th "Юра стопнул тачку"
@@ -168,7 +168,7 @@ label akt1:
     stop music fadeout 0.5
 
     play music sound_zvukEzdi fadein 0.5
-    scene image_fyra
+    scene image_fyra with dissolve
     show image_vladM at fleft
     show image_otechMatveia at fright 
     with dissolve
@@ -188,6 +188,7 @@ label akt1:
     name_vladM "ээ{w}, ну может вас угостить чем-то?"
     myzik "Ну{w}, угостить ты меня можешь"
     play music music_list['doomed_to_be_defeated'] fadein 0.5
+    show image_otechMatveia at left with dspr
     th "И произошло то, чего ожидать Влад не мог никак{w}, мужик начал поглаживать его по коленке и вести руку к письке"
     name_vladM "ЭЭЭЭ{w}, ТЫ ЧЕГО ТВОРИШЬ?{w} ИДИ НАХУЙ МУДАК ЁБАНЫЙ"
     th "Влад попытался выйти из машины{w}, но двери оказались закрыты"
@@ -293,12 +294,13 @@ label akt1:
     sl "Пойдём со мной{w}, покажу вам лагерь, пока Ольга Дмитриевна занята"
     name_ii "Ну пошли{w}, хули делать"
     th "Мы вошли во внутрь"
+
     scene bg ext_clubs_day with dissolve
     th "Буквально через пятьдесят метров слева словно из-под зесли выросло небольшое одноэтажное здание"
-    show cg d1_gratshopper with dissolve
+    show cg d1_grasshopper with dissolve
     th "Перед нами открылась картина{w}, малолетняя пиздючка пугала фиолетововолосую девочку кузнечиком"
     un "Ииии-иииии-иии"
-    hide cg d1_gratshopper with dissolve
+    hide cg d1_grasshopper with dissolve
     show un scared pioneer at left 
     show us laugh pioneer at right
     with dissolve
