@@ -29,6 +29,7 @@ init:
     $ sound_zvukiPrirodyKapliDozhdya = "mods/tanki_online/sound/zvuki-prirody-kapli-dozhdya.mp3"
     $ sound_zvukEzdi                 = "mods/tanki_online/sound/звук_езды.mp3"
     $ sound_sverchki                 = "mods/tanki_online/sound/звуки_сверчков.mp3"
+    $ sound_skrimer                  = "mods/tanki_online/sound/skrimer.mp3"
 
 #endregion
 
@@ -423,7 +424,10 @@ label akt1:
     mt "Ну так может останетесь на ночь у нас{w}, а то уставшие, а завтра полные сил поедите"
     name_vladP "Хм{w}, а знаете, было бы неплохо"
     th "Лицо Влада резко побелело"
-    #СКРИМЕР ЁБНУТЫЙ
+    show cg epilogue_mi_2
+    play sound sound_skrimer
+    $ renpy.pause(0.1)
+    hide cg epilogue_mi_2
     name_vladM "Пацаны{w}, выйдем"
 
     scene bg ext_house_of_mt_day with dissolve
@@ -443,6 +447,8 @@ label akt1:
     name_ii "Иди спать, твоя очередь завтра тачку вести"
     name_ura "ДА СУКА!{w} СУКА{w} СУКА"
     th "Юра понимал что выбора у него другого нет и ему реально пришлось идти спать"
+
+    scene bg ext_square_nigh with dissolve
     th "Тем временем у Сявы"
     th "Лена сидела на скамейке и читала книгу"
     name_ii "ээ{w}, привет"
