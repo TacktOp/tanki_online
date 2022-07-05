@@ -426,7 +426,7 @@ label akt1:
     th "Лицо Влада резко побелело"
     show cg epilogue_mi_2
     play sound sound_skrimer
-    $ renpy.pause(0.1)
+    $ renpy.pause(0.4)
     hide cg epilogue_mi_2
     name_vladM "Пацаны{w}, выйдем"
 
@@ -448,7 +448,7 @@ label akt1:
     name_ura "ДА СУКА!{w} СУКА{w} СУКА"
     th "Юра понимал что выбора у него другого нет и ему реально пришлось идти спать"
 
-    scene bg ext_square_nigh with dissolve
+    scene bg ext_square_night with dissolve
     th "Тем временем у Сявы"
     
     scene cg d6_un_evening_2 with dissolve
@@ -598,12 +598,12 @@ label akt1:
     sl "Привет, вы, наверное, только что приехали?"
     show cg epilogue_mi_7
     play sound sound_skrimer
-    $ renpy.pause(0.1)
+    $ renpy.pause(0.4)
     hide cg epilogue_mi_7
     name_vladP "Смешно красавица{w}, ну ладно мы покатили"
     show cg d7_un_suicide
     play sound sound_skrimer
-    $ renpy.pause(0.1)
+    $ renpy.pause(0.4)
     hide cg d7_un_suicide
     th "Я поцеловал её"
     show sl scared pioneer with dspr
