@@ -225,7 +225,7 @@ label akt1:
 
     scene image_motel with dissolve
     show image_ura 
-    show image_otechMatveia
+    show image_otechMatveia at left
     with dissolve
     name_ura "Ты чё мудила, ахуел?"
     th "Не прошло и секунды как Юра со всей силы дал лежащему на земле мужику под дых" with hpunch
