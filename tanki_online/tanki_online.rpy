@@ -112,8 +112,8 @@ label doroga:
 
     show blink
     th "Я заснул сразу же как закрыл глаза."
-    scene image_carVLesy2 with dissolve
     hide blink
+    scene image_carVLesy2 with dissolve
     show unblink
 
     th "Пока мы все спали, Юра двигался по узкой дороге без асфальта, которая проходила прям в чаще леса."
