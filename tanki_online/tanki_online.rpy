@@ -215,11 +215,25 @@ label akt1:
     name_ii "ПОГНАЛИ"
     stop music fadeout 0.5
     play music music_list['doomed_to_be_defeated'] fadein 0.5
+
+    scene image_fyra
+    show image_vladM at fleft
+    show image_otechMatveia at left 
+    with dissolve
     th "Открыв дверь мы увидели то{w}, как мужик судорожно держа Влада за горло пытался изнасиловать его{w}, но Юра выкинул мужика из машины"
+
+    scene image_motel with dissolve
+    show image_ura 
+    show image_otechMatveia
+    with dissolve
     name_ura "Ты чё мудила, ахуел?"
-    th "Не прошло и секунды как Юра со всей силы дал лежащему на земле мужику под дых"
+    th "Не прошло и секунды как Юра со всей силы дал лежащему на земле мужику под дых" with hpunch
+    hide image_otechMatveia with dspr
+    show image_vladP at left
+    show image_ii at fleft 
+    with dissolve
     name_vladP "Всё норм чувак?"
-    show image_vladM at fleft with dissolve
+    show image_vladM at fright with dissolve
     name_vladM "*тяжело дыша* да{w}, пидор ёбаный"
     th "Мужик попытался что-то сказать{w}, но Сява предотвратил это, пнув его по голове и вырубив его нахер"
     stop music fadeout 0.5
@@ -403,6 +417,7 @@ label akt1:
     name_vladP "ДА БЛЯТЬ НЕТ{w}, у нас навигатор...сломался{w}, нам нужна карта"
     mt "ааа{w}, хорошо, у меня есть как раз{w}, держите"
     name_ii "Ого{w}, вот так просто"
+    show mt smile pioneer with dspr
     mt "А вы торопитесь?"
     name_ii "Ну..{w} да нет"
     mt "Ну так может останетесь на ночь у нас{w}, а то уставшие, а завтра полные сил поедите"
@@ -410,6 +425,8 @@ label akt1:
     th "Лицо Влада резко побелело"
     #СКРИМЕР ЁБНУТЫЙ
     name_vladM "Пацаны{w}, выйдем"
+
+    scene bg ext_house_of_mt_day with dissolve
     th "Мы вышли на улицу"
     name_ura "Что такое чувак?"
     th "Влад был весь бледный, но при этом мокрый"
