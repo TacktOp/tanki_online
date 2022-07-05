@@ -46,10 +46,10 @@ init:
 
     transform begg:
         zoom 1.05 anchor (48, 27)
-        eate 0.10 pos (0,0)
-        eate 0.10 pos (25, 25)
-        eate 0.10 pos (0, 0)
-        eate 0.10 pos (-25, 25)
+        ease 0.10 pos (0,0)
+        ease 0.10 pos (25, 25)
+        ease 0.10 pos (0, 0)
+        ease 0.10 pos (-25, 25)
         repeat
 
 label doroga:
