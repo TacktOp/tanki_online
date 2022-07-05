@@ -451,14 +451,14 @@ label akt1:
     scene bg ext_square_night with dissolve
     th "Тем временем у Сявы"
     
-    scene cg d6_un_evening_2 with dissolve
+    show cg d6_un_evening_2 with dissolve
     th "Лена сидела на скамейке и читала книгу"
     name_ii "ээ{w}, привет"
     un "привет"
     name_ii "Ты почему тут сидишь одна{w}, что читаешь?"
     un "Люблю вечерами почитать{w}, это Джек Лондон{w}, а ты что нибудь читаешь?"
 
-    scene cg d6_un_evening_1 with dissolve
+    show cg d6_un_evening_1 with dissolve
     th "Сяве было стыдно признать тот факт что он книгу последний раз держал в садике{w}, но выпалил.."
     name_ii "Маяковского люблю"
     un "Здорово{w}, я тоже, какое твоё любимое произведение?"
@@ -467,7 +467,7 @@ label akt1:
     th "В ответ Лена лишь посмеялась"
     th "Сява думал лишь о том, что он никогда в жизни не видел настолько скромной девочки{w}, она была будто из книги"
 
-    scene cg d6_un_evening_2 with dissolve
+    show cg d6_un_evening_2 with dissolve
     un "Слава"
     un "Можешь трахнуть меня?"
     th "У Сявы зазвенело в ушах и ноги стали ватными"
@@ -478,8 +478,8 @@ label akt1:
     th "С Сявой говорил как будто другой человек{w}, та девочка с которой Сява говорил минуту назад просто испарилась"
     name_ii "Ну пошли:)"
     
-    scene cg d7_un_hentai with dissolve
-    scene cg d7_un_hentai_3 with dissolve
+    show cg d7_un_hentai with dissolve
+    show cg d7_un_hentai_3 with dissolve
     th "Следующую ночь Сява провёл с девушкой, которую он знал всего лишь один день{w}, но этот секс Сява запонил точно на всю жизнь"
 
     scene bg ext_path_night with dissolve
@@ -487,19 +487,19 @@ label akt1:
     th "По увеличению количества мошки, я понимал что приближаюсь к какому-то водоёму"
     th "Тут я услышал шорохи{w}, спрячась за кустом, я смотрел в сторону пруда"
 
-    scene cg d2_slavya_forest with dissolve
+    show cg d2_slavya_forest with dissolve
     th "Это была Славя{w}, она шла около пруда и постепенно снимала с себя одежду"
 
-    scene cg d2_sl_swim with dissolve
+    show cg d2_sl_swim with dissolve
     th "И вот уже полностью голая Славя заходила в пруд"
 
-    scene cg d6_sl_swim with dissolve
+    show cg d6_sl_swim with dissolve
     th "Окликнуть её было бы странным мувом{w}, но и уходить как-то не хотелось"
     th "Я просидел так ещё минут двадцать, и дождался момента, когда она вышла из воды"
     th "Она оделась, а я постепенно начал уходить"
     th "Я гуськом добрался до другого дерева и уже собирался бежать как вдруг"
 
-    scene cg d6_sl_forest with dissolve
+    show cg d6_sl_forest with dissolve
     sl "Эй{w}, привет!"
     th "Блять!{w} БЛЯТЬ!"
     name_vladP "Ээаэаэ{w}, привет"
@@ -516,14 +516,14 @@ label akt1:
     sl "Понравилось?"
     th "Мой внутренний девственник чувствовал{w}, что нужно продолжения, но что делать я не знал"
 
-    scene cg d6_sl_hentai_2 with dissolve
+    show cg d6_sl_hentai_2 with dissolve
     th "Я положил ей руку грудь"
     th "Она смущённо опять поцеловала меня"
 
-    scene cg d6_sl_hentai_1 with dissolve
+    show cg d6_sl_hentai_1 with dissolve
     th "Дальше всё пошло само по себе{w}, мы трахались пол ночи"
 
-    scene cg d7_sl_morning with dissolve
+    show cg d7_sl_morning with dissolve
     th "Закончив, мы легли спать в спальный мешок"
 
 
@@ -564,10 +564,10 @@ label akt1:
     show dv surprise body with dspr
     dv "Аххх"
 
-    scene cg d6_dv_hentai with dissolve
+    show cg d6_dv_hentai with dissolve
     th "Я как рассказчик хуй знает какого лешего в этом парте так много секса, ну раз подвернулся случай, почему бы и нет"
 
-    scene cg d6_dv_hentai_2 with dissolve
+    show cg d6_dv_hentai_2 with dissolve
     th "На протяжении ночи Влад трахал Алису{w}, пока они не уснули вместе"
 
     scene bg ext_path_day with dissolve
