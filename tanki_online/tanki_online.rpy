@@ -424,8 +424,8 @@ label akt1:
     mt "Ну так может останетесь на ночь у нас{w}, а то уставшие, а завтра полные сил поедите"
     name_vladP "Хм{w}, а знаете, было бы неплохо"
     th "Лицо Влада резко побелело"
-    show cg epilogue_mi_2
     play sound sound_skrimer
+    show cg epilogue_mi_2
     $ renpy.pause(0.4)
     hide cg epilogue_mi_2
     name_vladM "Пацаны{w}, выйдем"
@@ -596,13 +596,13 @@ label akt1:
     th "Мы вышли на площадь и к нам подошла Славя"
     show sl normal pioneer with dissolve
     sl "Привет, вы, наверное, только что приехали?"
-    show cg epilogue_mi_7
     play sound sound_skrimer
+    show cg epilogue_mi_7
     $ renpy.pause(0.4)
     hide cg epilogue_mi_7
     name_vladP "Смешно красавица{w}, ну ладно мы покатили"
-    show cg d7_un_suicide
     play sound sound_skrimer
+    show cg d7_un_suicide
     $ renpy.pause(0.4)
     hide cg d7_un_suicide
     th "Я поцеловал её"
