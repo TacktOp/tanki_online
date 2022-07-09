@@ -550,7 +550,7 @@ label akt1:
     stop ambience fadeout 0.5
     stop music fadeout 0.5
 
-    play ambience_camp_center_night fadein 0.5
+    play ambience ambience_camp_center_night fadein 0.5
     scene bg ext_houses_sunset with dissolve
     th "Влад шёл по лагерю сам не свой{w}, эта тревога не покидала его"
     th "Тут он почувствовал сильный толчок в спину и упал на траву" with vpunch
