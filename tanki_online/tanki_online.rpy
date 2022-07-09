@@ -905,7 +905,7 @@ label akt1:
     stop ambience fadeout 0.5
     show blink
     th "Темнота"
-    scene bg int_house_of_sl_day with dissolve
+    scene bg int_house_of_sl_day
     hide blink
     show unblink
     name_ura "ААААААААААААААА"
