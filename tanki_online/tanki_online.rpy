@@ -660,6 +660,8 @@ label akt1:
     th "Меня вырубило сразу{w}, но я даже не подозревал, что Юра прям за рулём, уснёт спустя буквально пару минут"
     show blink
     th "Его глаза медленно закрывались, и тут..."
+    stop ambience fadeout 0.5
+
     scene bg int_house_of_sl_day
     hide blink
     show unblink
@@ -678,6 +680,8 @@ label akt1:
     scene bg int_house_of_mt_day
     show mt normal pioneer
     with dissolve 
+    play sound sfx_open_dooor_campus_1
+    play music music_list['so_good_to_be_careless'] fadein 0.5
     mt "Привет ребята, вы новенькие?"
     name_ii "Нет{w}, какого лешего?"
     show mt shocked pioneer with dspr
@@ -686,17 +690,22 @@ label akt1:
     th "Его лицо было бледное как пепел"
     name_vladP "Что такое чувак?"
     name_ura "*шёпотом* чувак....."
+    stop music fadeout 0.5
     th "Он указал пальцем на мусорное ведро, около него лежала та самая упаковка из под шоколадки, не смятая и ВОЗЛЕ ВЕДРА БЛЯТЬ, А НЕ В НЁМ"
     name_vladP "Твою мать..."
+    play music music_list['doomed_to_be_defeated'] fadein 0.5
     name_vladP "ОЛЬГА МАТЬ ВАШУ КАКОГО ХУЯ?"
     show mt rage pioneer with dspr
     mt "Прекратите кричать"
     name_ii "Так{w}, иди нахуй"
 
     scene bg ext_house_of_mt_day with dissolve
+    play sound sfx_open_dooor_campus_2
     th "Мы вылетели из её домика"
     name_vladM "Я говорил{w}, Я ГОВОРИЛ БЛЯТЬ"
     name_vladP "И ЧТО НАМ ДЕЛАТЬ БЛЯТЬ?"
+    stop music fadeout 0.5
+    play ambience ambience_camp_center_day fadein 0.5
     name_ura "Так{w}, спокойствие{w}, может это всё ещё пранк"
     th "По голосу Юры было слышно, что он уже сам не верит в то что говорит"
     show dv normal pioneer with dissolve
@@ -719,6 +728,7 @@ label akt1:
     scene bg int_house_of_sl_day
     hide blink
     show unblink
+    stop ambience fadeout 0.5
     name_ura "АААААААААА"
     name_vladP "Мать вашу"
     name_vladM "Сука{w}, мы теперь навсегда здесь?"
@@ -735,6 +745,8 @@ label akt1:
     name_ura "Так{w}, тогда с начала действуем по плану Сявы{w}, живём день так, как хотят они"
    
     scene bg ext_house_of_sl_day with dissolve
+    play sound sfx_open_dooor_campus_2
+    play ambience ambience_camp_center_day fadein 0.5
     th "Мы оделись и вышли на улицу"
     show sl normal pioneer with dissolve
     sl "Привет, вы, наверное, только что приехали?"
@@ -749,6 +761,8 @@ label akt1:
     th "Расписание было типичное, зарядка, обеды, ужины, общественно-полезные работы и тому подобное"
 
     scene bg ext_boathouse_day with dissolve
+    stop ambience fadeout 0.5
+    play ambience ambience_boat_station_day fadein 0.5
     th "Мы пошли к пристани"
     name_ii "Не мужики{w}, идея липа{w}, я хуйню придумал, я жалею что предложил"
     name_ura "Хахахах{w}, тебя условие подъёма в семь не устроило?"
@@ -759,13 +773,16 @@ label akt1:
     name_vladP "А если получится, как мы тебя заберём?"
     name_vladM "Разберёмся, езжайте"
     th "Тянуть резину мы не стали{w}, прыгнули в машину и поехали"
+    stop ambience fadeout 0.5
 
+    play ambience ambience_camp_center_day fadein 0.5
     scene bg ext_road_day with dissolve 
     th "Я был за рулём{w}, ноги еле нажимали на педали{w}, они подкашивались так, как будто я стою на краю пропасти"
     name_ura "Чувак, всё норм?"
     name_vladP "Да вроде бы"
     show blink
     name_ii "Главное не засн..."
+    stop ambience fadeout 0.5
     scene bg int_house_of_sl_day
     hide blink
     show unblink
