@@ -736,7 +736,7 @@ label akt1:
     name_vladP "Да вроде бы"
     show blink
     name_ii "Главное не засн..."
-    scene bd int_house_of_sl_day
+    scene bg int_house_of_sl_day
     hide blink
     show unblink
     th "Стоило мне моргнуть{w}, и я открыл глаза в домике"
@@ -830,7 +830,7 @@ label akt1:
     name_vladM "Это либо у меня муражки{w}, либо здесь пиздецки холодно"
     name_ura "Это здесь холодно"
 
-    scene bg int_catacombs_living with dissolve
+    scene bg int_mine_door with dissolve
     th "Тоннель оказался вовсе и не долгим{w}, пройдя по нему пару минут мы оказались у большой деревянной двери"
     name_vladM "И как нам это открыть?"
     name_ura "Ну в теории можно с разбега влететь в неё всем вместе"
