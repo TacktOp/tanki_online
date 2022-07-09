@@ -288,6 +288,7 @@ label akt1:
     name_vladM "Оки{w}, стопаю"
     stop music fadeout 0.5
     
+    play ambience ambience_camp_center_day fadein 0.5
     scene bg ext_camp_entrance_day with dissolve
     th "Мы остановились у остановки и перед нами развернулись большие ворота ведущие на какую-то территорию"
     name_vladP "Хм{w}, выглядит как....{w} летний лагерь"
@@ -313,6 +314,7 @@ label akt1:
     scene bg ext_clubs_day with dissolve
     th "Буквально через пятьдесят метров слева словно из-под зесли выросло небольшое одноэтажное здание"
     show cg d1_grasshopper with dissolve
+    play music music_list['i_want_to_play'] fadein 0.5
     th "Перед нами открылась картина{w}, малолетняя пиздючка пугала фиолетововолосую девочку кузнечиком"
     un "Ииии-иииии-иии"
     hide cg d1_grasshopper with dissolve
@@ -337,9 +339,12 @@ label akt1:
     un "Хорошо{w}, ещё раз спасибо"
     th "И она убежала в ту же сторону что и эта пиздень"
     hide un smile pioneer with dissolve
+    stop music fadeout 0.5
+
     scene bg ext_houses_day with dissolve
     th "Мы прошли дальше и оказались среди домиков"
     th "Молча разглядывая лес{w}, я был обескуражен этим спокойствием и тишиной этого места{w}, но вдруг"
+    play sound sfx_body_bump
     th "Край моего глаза увидел как нечто ударило Влада по спине и он упал на асфальт" with vpunch
     name_ii "Ээээ{w}, какого хуя?"
     show dv rage pioneer with dissolve
@@ -360,7 +365,9 @@ label akt1:
     th "Мы решили пойти дальше"
     name_vladP "ОООООО{w}, ТАМ ОЗЕРО!"
     name_ura "Ебааааать"
+    stop ambience fadeout 0.5
     
+    play ambience ambience_boat_station_day fadein 0.5 
     scene bg ext_boathouse_day with dissolve
     th "Мы прибежали к пристани{w}, шум ветра и воды делал это место практически райским"
     show sl normal swim with dissolve
@@ -386,7 +393,9 @@ label akt1:
     name_vladP "Можешь пойти так"
     show sl shy swim with dspr
     th "Они покраснела{w}, а я понял что кажется я - даун"
+    stop ambience fadeout 0.5
     
+    play ambience ambience_camp_center_day fadein 0.5
     scene bg ext_square_day 
     show dv normal pioneer at left
     show us normal pioneer at right
@@ -410,9 +419,12 @@ label akt1:
     scene bg ext_house_of_mt_day with dissolve
     th "Через пару минут мы оказались у треугольного домика, вокруг которого росла черёмуха"
     
+    stop ambience fadeout 0.5
+    play music music_list['so_good_to_be_careless'] fadein 0.5
     scene bg int_house_of_mt_day
     show mt normal pioneer 
     with dissolve
+    play sound sfx_open_dooor_campus_1 
     th "Мы вошли{w}, перед нами стояла девушка лет двадцати пяти{w}, Юра заприметил на полу мусорное ведро, а рядом с ним лежала упаковка из под шоколадки{w}, нахой он это сделал незнаю{w}, но он поднял бумажку, смял её и выбросил в мусорку"
     mt "Привет{w}, вы новенькие?"
     name_vladP "ДА БЛЯТЬ НЕТ{w}, у нас навигатор...сломался{w}, нам нужна карта"
@@ -422,6 +434,7 @@ label akt1:
     mt "А вы торопитесь?"
     name_ii "Ну..{w} да нет"
     mt "Ну так может останетесь на ночь у нас{w}, а то уставшие, а завтра полные сил поедите"
+    stop music fadeout 0.5
     name_vladP "Хм{w}, а знаете, было бы неплохо"
     th "Лицо Влада резко побелело"
     play sound sound_skrimer
@@ -429,7 +442,9 @@ label akt1:
     $ renpy.pause(0.4)
     hide cg epilogue_mi_2
     name_vladM "Пацаны{w}, выйдем"
+    play sound sfx_open_dooor_campus_2
 
+    play ambience ambience_camp_center_day fadein 0.5
     scene bg ext_house_of_mt_day with dissolve
     th "Мы вышли на улицу"
     name_ura "Что такое чувак?"
@@ -450,7 +465,10 @@ label akt1:
 
     scene bg ext_square_night with dissolve
     th "Тем временем у Сявы"
+    stop ambience fadeout 0.5
     
+    play ambience ambience_camp_center_night fadein 0.5
+    play music music_list['lets_be_friends'] fadein 0.5
     show cg d6_un_evening_2 with dissolve
     th "Лена сидела на скамейке и читала книгу"
     name_ii "ээ{w}, привет"
@@ -481,7 +499,10 @@ label akt1:
     show cg d7_un_hentai with dissolve
     show cg d7_un_hentai_3 with dissolve
     th "Следующую ночь Сява провёл с девушкой, которую он знал всего лишь один день{w}, но этот секс Сява запонил точно на всю жизнь"
+    stop music fadeout 0.5
+    stop ambience fadeout 0.5
 
+    play ambience ambience_forest_night fadein 0.5
     scene bg ext_path_night with dissolve
     th "Я шёл по лесу{w}, птицы уже не пели{w}, слышно было только сверчков и шум листьев"
     th "По увеличению количества мошки, я понимал что приближаюсь к какому-то водоёму"
@@ -498,6 +519,7 @@ label akt1:
     th "Я просидел так ещё минут двадцать, и дождался момента, когда она вышла из воды"
     th "Она оделась, а я постепенно начал уходить"
     th "Я гуськом добрался до другого дерева и уже собирался бежать как вдруг"
+    play music music_list['i_dont_blame_you'] fadein 0.5 
 
     show cg d6_sl_forest with dissolve
     sl "Эй{w}, привет!"
@@ -525,8 +547,10 @@ label akt1:
 
     show cg d7_sl_morning with dissolve
     th "Закончив, мы легли спать в спальный мешок"
+    stop ambience fadeout 0.5
+    stop music fadeout 0.5
 
-
+    play ambience_camp_center_night fadein 0.5
     scene bg ext_houses_sunset with dissolve
     th "Влад шёл по лагерю сам не свой{w}, эта тревога не покидала его"
     th "Тут он почувствовал сильный толчок в спину и упал на траву" with vpunch
@@ -544,10 +568,13 @@ label akt1:
     name_vladM "Ого"
     dv "Так и быть{w}, за твоё молчание предлагаю выпить вместе"
     name_vladM "Балдёж{w}, пойдём"
-    
+    stop ambience fadeout 0.5
+
     scene bg int_house_of_dv_night 
     show dv normal pioneer
     with dissolve
+    play music music_list['she_is_kind'] fadein 0.5
+    play sound sfx_open_dooor_campus_1 
     th "Они зашли в домик, в котором никого не было"
     th "Усевшись за стол они начала глушить водку{w}, стопку за стопкой"
     show dv grin pioneer2 with dspr
@@ -570,10 +597,13 @@ label akt1:
     show cg d6_dv_hentai_2 with dissolve
     th "На протяжении ночи Влад трахал Алису{w}, пока они не уснули вместе"
 
+    play ambience ambience_forest_day fadein 0.5
     scene bg ext_path_day with dissolve
     th "Утром солнце светило особенно ярко{w}, я хотел приобнять Славю, но со мной в мешке её не оказалось"
     th "Странно{w}, наверно уже ушла в лагерь"
+    stop ambience fadeout 0.5
 
+    play ambience ambience_camp_center_day fadein 0.5
     scene bg ext_house_of_sl_day with dissolve
     th "Я пришёл к нашему домику, на улице стояли Юра и Влад"
     name_ura "О, ты в лесу что ли ночевал?"
