@@ -797,6 +797,7 @@ label akt1:
     name_vladM "Для вас прошло несколько минут?"
     name_ii "К чему ты это?"
     th "Влад завернул рукав своей толстовки"
+    play music music_list['drown'] fadein 0.5
     name_ura "Мать твою"
     th "На его руке были выцарапаны полосы"
     name_vladP "Чувак{w}, сколько дней ты уже здесь?"
@@ -816,10 +817,12 @@ label akt1:
     name_vladM "В один из дней{w}, я взорвал котёл в столовой и лагерь практически сгорел до тла{w}, стоило мне лечь спать, я просыпался в домике как ни в чём не бывало"
     name_ii "А ты пробовал не ложится спать?"
     name_vladM "Да{w}, но рано или поздно ты всё равно засыпаешь..."
+    stop ambience fadeout 0.5
     th "Каждую новую идею по тому как выбраться от сюда рушил Влад{w}, он перепробовал все варианты"
     name_ii "Пойдем к Ольге, пока её нет, пороемся в её вещах, вдруг алкашку найдём"
 
     scene bg int_house_of_mt_day with dissolve
+    play music music_list['so_good_to_be_careless'] fadein 0.5
     th "Так мы и поступили, уже через минуту мы искали всякое в домике Ольги"
     name_ii "О{w}, её трусики"
     name_vladP "Хахаха{w}, балдёж"
@@ -833,8 +836,10 @@ label akt1:
     name_ii "А разве..."
     name_vladP "Ведь в начале карта у неё"
     name_ura "Так{w}, кажется что то нащупали{w}, бежим"
+    stop music fadeout 0.5
 
     scene bg int_house_of_sl_day with dissolve
+    play sound sfx_open_dooor_campus_2
     th "Юра первым забежал в наш домик и начал судорожно рыскать в шкафчиках{w}, и нашёл"
     name_ura "Пацаны{w}, вот она"
     name_vladM "Но почему..."
@@ -852,6 +857,7 @@ label akt1:
     name_vladP "Да какого хуя ты всегда орёшь"
     name_vladM "Пацаны{w}, она лежит"
     th "Влад был прав{w}, карта была на полу"
+    play music music_list['eat_some_trouble'] fadein 0.5
     name_vladP "АХУЕТЬ, АХАХАХХАХАХ"
     th "Мы были пиздецки рады{w}, хотя и в душе не ебали что с этим делать"
     name_vladP "Это единственная вещь, которая не поддаётся этой хуйне"
@@ -861,8 +867,11 @@ label akt1:
     th "На карте был изображён крестик, хотя по логике быть там его не должно"
     name_vladM "Так это даже не карта до Байкала{w}, это карта лагеря"
     name_ura "Нам нужно идти туда"
+    stop music fadeout 0.5
 
     scene bg ext_house_of_sl_day with dissolve
+    play sound sfx_open_dooor_campus_1
+    play ambience ambience_camp_center_day fadein 0.5
     th "Мы вышли на улицу и отправились к месту которое помечалось крестом на карте"
 
     scene bg int_mine_exit_night_light with dissolve
@@ -872,6 +881,8 @@ label akt1:
     th "Мы полезли вслед за ним"
 
     scene bg int_catacombs_entrance with dissolve
+    stop ambience fadeout 0.5
+    play ambience ambience_catacombs_stones fadein 0.5
     th "Перед нами оказался длинный тоннель, он как будто звал нас своей темнотой, из-за которой казался некончаемым"
     name_vladP "Ну потопали"
     name_vladM "Это либо у меня муражки{w}, либо здесь пиздецки холодно"
@@ -889,6 +900,7 @@ label akt1:
     name_vladP "Мне кажется это оно"
     th "Разрывая коленки на штанах, мы ползли вперёд{w}, но тут ползущий вепереди Влад, резко упал на грудь"
     name_vladP "ВЛАД!{w} КАКОГО ХУ....."
+    stop ambience fadeout 0.5
     show blink
     th "Темнота"
     scene bg int_house_of_sl_day with dissolve
@@ -901,11 +913,13 @@ label akt1:
     name_vladM "Пойду покурю..."
 
     scene bg ext_house_of_sl_day with dissolve
+    play sound sfx_open_dooor_campus_1
     th "Влад вышел на улицу и закурил{w}, бездонно смотря в пол"
     show dv normal pioneer with dissolve
     dv "Ооооо{w}, ебать вы поспать конечно пацаны{w}, и не кури здесь Влад{w}, Ольга увидит, пизды даст"
     th "Влад медленно повернул голову на Алису"
     dv "Что?"
+    play music music_list['everlasting_summer'] fadein 0.5
     name_vladM "Сработало.....{w} СРАБОТАЛО МАТЬ ВАШУ!"
     show dv surprise pioneer with dspr
     dv "Что сработало?"
@@ -929,6 +943,7 @@ label akt1:
 
     scene bg ext_road_day with dissolve
     th "Уезжая я смотрел в зеркало заднего вида и видел девочек, которые махали нам вслед{w}, история кончено полный пиздец, но сейчас уезжая, даже как то не хотелось расставаться с ними{w}, но нас ждал Байкал...."
+    stop music fadeout 0.5
     scene black with dissolve
 
 label ne_vipil_tabletki:
