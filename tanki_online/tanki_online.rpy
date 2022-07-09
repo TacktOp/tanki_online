@@ -553,6 +553,7 @@ label akt1:
     play ambience ambience_camp_center_night fadein 0.5
     scene bg ext_houses_sunset with dissolve
     th "Влад шёл по лагерю сам не свой{w}, эта тревога не покидала его"
+    play sound sfx_body_bump
     th "Тут он почувствовал сильный толчок в спину и упал на траву" with vpunch
     show dv angry pioneer with dissolve
     dv "Опять ты!"
@@ -596,6 +597,7 @@ label akt1:
 
     show cg d6_dv_hentai_2 with dissolve
     th "На протяжении ночи Влад трахал Алису{w}, пока они не уснули вместе"
+    stop music fadeout 0.5
 
     play ambience ambience_forest_day fadein 0.5
     scene bg ext_path_day with dissolve
