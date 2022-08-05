@@ -18,6 +18,29 @@ init:
     image image_prichep      = "mods/tanki_online/image/прицеп.jpg"
     image image_fyra         = "mods/tanki_online/image/фура.jpg"
     image image_otechMatveia = "mods/tanki_online/image/отец_матвея.png"
+    image image_tachka       = "mods/tanki_online/image/1.jpg"
+    image image_bereg        = "mods/tanki_online/image/2.jpg"
+    image image_list1        = "mods/tanki_online/image/3.jpg"
+    image image_list2        = "mods/tanki_online/image/4.jpg"
+    image image_domS         = "mods/tanki_online/image/5.jpg"
+    image image_gostin       = "mods/tanki_online/image/6.jpg"
+    image image_ahye         = "mods/tanki_online/image/7.jpg"
+    image image_cafev        = "mods/tanki_online/image/8.jpg"
+    image image_ylisa        = "mods/tanki_online/image/9.jpg"
+    image image_barr         = "mods/tanki_online/image/10.jpg"
+    image image_loda1        = "mods/tanki_online/image/11.jpg"
+    image image_pereyl       = "mods/tanki_online/image/12.jpg"
+    image image_cirk         = "mods/tanki_online/image/13.jpg"
+    image image_cirkv        = "mods/tanki_online/image/14.jpg"
+    image image_loda2        = "mods/tanki_online/image/15.jpg"
+    image image_izba1        = "mods/tanki_online/image/16.jpg"
+    image image_digcaprio    = "mods/tanki_online/image/17.png"
+    image image_oficnegr     = "mods/tanki_online/image/18.png"
+    image image_gena         = "mods/tanki_online/image/19.png"
+    image image_bomj         = "mods/tanki_online/image/20.png"
+    image image_jonisini     = "mods/tanki_online/image/21.png"
+    image image_izba2        = "mods/tanki_online/image/17.jpg"
+    image image_sp20min      = "mods/tanki_online/image/сп20минут реальноговремент.jpg"
 
 #endregion
 
@@ -35,13 +58,17 @@ init:
 
 
 #region name
-    $ name_vladM   = Character (u'ВладМ',  color = "#60ca3f",   what_color = "#FFFFFF")
-    $ name_vladP   = Character (u'ВладП',  color = "#76d4ff",   what_color = "#FFFFFF")
-    $ name_ura     = Character (u'Юра',    color = "#FF8C00",   what_color = "#FFFFFF")
-    $ name_ii      = Character (u'Сява',   color = "#cc5233",   what_color = "#FFFFFF")
-    $ name_rem     = Character (u'Рем',    color = "#00a2ff",   what_color = "#FFFFFF")
-    $ name_matvei  = Character (u'Матвей', color = "#1e7055ff", what_color = "#FFFFFF")
-    $ myzik        = Character (u'Мужик',  color = "#703c1eff", what_color = "#FFFFFF")
+    $ name_vladM   = Character (u'ВладМ',          color = "#60ca3f",   what_color = "#FFFFFF")
+    $ name_vladP   = Character (u'ВладП',          color = "#76d4ff",   what_color = "#FFFFFF")
+    $ name_ura     = Character (u'Юра',            color = "#FF8C00",   what_color = "#FFFFFF")
+    $ name_ii      = Character (u'Сява',           color = "#cc5233",   what_color = "#FFFFFF")
+    $ name_rem     = Character (u'Рем',            color = "#00a2ff",   what_color = "#FFFFFF")
+    $ name_matvei  = Character (u'Матвей',         color = "#1e7055ff", what_color = "#FFFFFF")
+    $ myzik        = Character (u'Мужик',          color = "#703c1eff", what_color = "#FFFFFF")
+    $ chel         = Character (u'Чел',            color = "#050c49ff", what_color = "#FFFFFF")
+    $ offnik       = Character (u'Официант негр',  color = "#000000ff", what_color = "#FFFFFF")
+    $ gena         = Character (u'ШлюхаЖена',      color = "#ff00ffff", what_color = "#FFFFFF")
+    $ bomg         = Character (u'Бомж',           color = "#ffffffff", what_color = "#FFFFFF")
 
 #endregion
 
@@ -947,6 +974,476 @@ label akt1:
     th "Уезжая я смотрел в зеркало заднего вида и видел девочек, которые махали нам вслед{w}, история кончено полный пиздец, но сейчас уезжая, даже как то не хотелось расставаться с ними{w}, но нас ждал Байкал...."
     stop music fadeout 0.5
     scene black with dissolve
+
+    scene image_tachka with dissolve
+    th "На большой скорости, дорога сливалась в одну большую полосу, а мелькающие за окном поля и леса, уже нихуёво так надоедали"
+    name_ii "Блять{w}, как же я заебался{w}, кто нибудь может сменить меня?"
+    th "В ответ была лишь тишина{w}, Юра и Влад спали на заднем сиденье, а я смотрел в окно, слушая музыку в наушниках"
+    name_ii "Блять{w}, Влад...{w} ВЛАДИСЛАВ НАХУЙ!"
+    th "Меня передёрнуло"
+    name_vladP "Ааа{w}, чего тебе?"
+    name_ii "Можешь меня сменить?"
+    name_vladP "А ты не ахуел ли?{w} Едешь часа четыре только{w}, ещё два едь, а там поговорим"
+    name_ii "Ну и иди в пизду"
+    name_vladP "Хорошо"
+    th "Выстроив на своём лице недовольство{w}, Сява продолжил вести тачку"
+    name_vladM "Мгмх{w}, всем доброе"
+    name_ii "Доброе"
+    name_vladM "Чувак{w}, нам ещё долго ехать?"
+    name_ii "Слушай{w}, я честно говоря хуй знает{w}, судя по карте мы едем в нужную сторону{w}, но когда мы точно приедем я понять не могу"
+    name_vladP "Сява{w}, там какой-то водоём{w}, можешь стопнуть{w}, хочу умыться и горячего шоколада въебать"
+    name_ii "Если остановлюсь, сменишь меня?"
+    name_vladP "Да сменю, сменю, заебал"
+    name_ii "Ура"
+
+    scene image_bereg with dissolve
+    show image_vladM at right
+    show image_vladP at fright
+    with dissolve
+    th "Сява свернул к песчаному бережку у самой воды{w}, место было замечательное, вокруг не одного дерева"
+    th "Мы с Владом вышли из тачки{w}, Сява же скрипя, перебрался на заднее сиденье"
+    name_vladM "Аааагх{w}, как же хорошой, свежо!"
+    name_vladP "Да не говори{w}, пить шайной дваколад на берегу{w}, звучит как мечта жизни"
+    name_vladM "Ага"
+    th "В такие моменты ощущаешь что-то пиздецки тёплое внутри{w}, когда стоишь на берегу воды, на песчаном пляже, в тысячах километров от дома, в компании главных дурачков в твоей жизни"
+    th "Шоколад кончился"
+    name_vladP "Бля{w}, руки зафаршмачил{w}, надо руки вымыть"
+    th "Я подошёл к воде и окунул руки"
+    name_vladP "Афагет{w}, вода холодная я его рот брал"
+    name_vladM "Прям так?"
+    name_vladP "Да"
+    name_vladM "Так ладно{w}, пиздуй в тачку{w}, я поссу и приду"
+    hide image_vladP with dissolve
+    name_vladP "Ага"
+    th "Влад вывалил своего чарончика и принялся ссать прям в воду"
+    show image_digcaprio at left with dissolve
+    chel "ЭЭЭЭ ПИЗДЮК!"
+    name_vladM "Каво блять?"
+    chel "Ты чё ахуел, пидрила?"
+    name_vladM "А что не так то ебать?"
+    chel "Ты блять ссышь в самое чистое озеро в России{w}, всё норм у тебя?"
+    name_vladM "Чего нахуй?"
+    chel "Блять это Байкал даун"
+    name_vladM "Да?"
+    chel "Ты ёбнутый?"
+    name_vladM "ПАЦАНЫЫЫЫ! ЕБАААААТЬ! ВСЕ СЮДА!"
+    th "Мы торкнули Юру, и вышли на берег"
+    show image_vladP at fleft
+    show image_ii
+    show image_ura at cleft
+    with dissolve
+    name_ura "Че ты разорался придурок?"
+    name_vladM "Мужики, это Байкал"
+    name_vladP "Чего"
+    name_vladM "ЭТО ОН НАХОООООЙ"
+    name_ii "Блляяяя{w}, наконец-то приехали, слава богу..."
+    name_vladP "А это чё за хуй?"
+    chel "Ты чё ахуел?"
+    name_vladM "Да всё мужик, пиздуй{w}, понял я, это Байкал{w}, больше в него ссать не буду"
+    hide image_digcaprio with dissolve
+    name_ura "А нахуй ты вообще в воду ссал?"
+    name_vladM "Ну хочу я"
+    name_vladP "Блять, а я центр-банк ограбить хочу, ну я же этого не делаю"
+    name_vladM "А очень зря"
+    name_ii "Так ну тогда поехали в Листвянку{w}, там ищем дом{w}, ииии..."
+    name_vladM "ПИТЬ ПИВО"
+    name_ii "Юхуууу"
+    name_ura "Мда..."
+    hide image_ii 
+    hide image_vladM
+    hide image_vladP
+    hide image_ura
+    with dissolve
+    th "Мы сели в машину и действительно{w}, проехав по хуйне, перед нами открылся городок прям у огромного озера, вот оно - начало пиздатейших каникул"
+    
+    scene image_list1 with dissolve
+    th "Перед нами открылось удивительное место{w}, небольшой городок у берега одного из самых крутых водоёмов в мире"
+    name_ii "Пацаны, это разъёб"
+    name_vladP "Дааа{w}, прямо как в детстве"
+    name_ura "Вау"
+    th "Влад молчал{w}, он лишь с открытым ртом смотрел в окно"
+    name_vladP "Мы же обещали свозить тебя на море, Сява."
+    name_ura "Конечно не море{w}, но как по мне ни капли не хуже"
+    name_ii "А у меня для вас сюрприз кстати"
+    name_vladM "Сюрприз{w}, от СЯВЫ?"
+    name_vladP "Ахуеть"
+    name_ii "Я решил проблему с жильём и снял нам целый дом"
+    name_ura "Чего нахуй?"
+    name_ii "Я за неплохие деньги, продал код"
+    name_vladP "Ебаааать{w}, смотри так и до собственной компании далеко"
+    name_ii "Да не{w}, как бред звучит"
+    
+    scene image_list2 with dissolve
+    th "Мы захели в город{w}, туристы конечно были, но не так много как я себе представлял"
+    name_vladM "Афагэт{w}, как же круто"
+    name_ura "Сява{w}, а где домик то твой?"
+    name_ii "Нужно проехать к концу города, по теории он там"
+    th "В этом городке не было и намёка на многоэтажки{w}, все дома были максимум в 5 этажей и меньше{w}, но заметно много я увидел: ресторанов, кафе, баров."
+    name_vladM "Сява{w}, омагад{w}, смотри, здесь везде бары"
+    name_ii "Хахахах{w}, будет весело"
+    th "Сам по себе городок не большой{w}, поэтому спустя несколько минут мы уже оказались на краю городка, у домика сявы"
+    
+    scene image_domS with dissolve
+    show image_ii at left
+    show image_vladM at right
+    show image_vladP at cright
+    show image_ura
+    with dissolve    
+    name_ii "Ну вот это чудовище"
+    name_ura "Ахуеть мужик, это же пиздец"
+    name_ii "Да ладно{w}, я же не купил его{w}, а снял на полторы недели.."
+    name_vladP "Так стоп..."
+    name_vladM "Мы же на две недели приехали{w}, где мы будем оставшуюся половину недели"
+    name_ii "Честно не ебу{w}, денег только на столько хватило"
+    name_ura "Ладно{w}, гостиницу снимем или на край в палатке затусуемся"
+    name_vladM "Я твою палатку рот долбил{w}, сам в ней спи"
+    name_ura "Иди-ка ты в хуй, гэй"
+    name_vladM "Писю в попу запихини"
+    name_ii "Влад.."
+    name_vladP "А?"
+    name_ii "Пусть эти тут себе что-нибудь куда-нибудь пихают{w}, а мы пойдём заселяться"
+    name_vladP "Ле го"
+    th "Мы зашли во внутрь"
+
+    scene image_gostin with dissolve
+    show image_ii
+    show image_vladP at right
+    with dissolve
+    name_vladP "Пиздец харомы брат"
+    name_ii "Я на сайте видел огромные виллы, но это то, на что денег хватило"
+    name_vladP "Да чувак это разъёб{w}, не ожидал от тебя"
+    name_ii "Я от себя тоже"
+    th "Вошли Влад и Юра"
+    show image_ura at left
+    show image_vladM at fleft
+    with dissolve
+    name_vladM "Ёбаный конь{w}, что за хата"
+    name_ura "Что тебе сделал конь?"
+    name_vladM "Игогокнул"
+    name_ii "Кароч{w}, только тут проблемка есть"
+    name_vladP "Блять ну конечно{w}, я так и думал"
+    name_ii "Да не{w}, всё норм{w}, просто тут всего две спальни"
+    name_ura "Ага.{w} А другие комнаты это что?"
+    name_ii "Сауна{w}, кухня{w}, библиотека"
+    name_vladM "Ты взял дом с библиотекой?{w} На тебя не похоже"
+    name_ii "Пошёл в пизду"
+    name_ura "Так{w}, ну значит вы в троём в одной спальне, а я в другой"
+    name_vladP "Оближи и проглоти"
+    name_ura "Не ну а чё"
+    name_ii "Так{w}, кароч{w}, с юрой будет жить Влад{w}, тот что тупой"
+    name_vladP "Бля"
+    name_vladM "Бля"
+    name_ura "Ты про кого из двоих?"
+    name_ii "Про обоих{w}, вот они два Влада, пусть вместе и живут"
+    name_vladM "Оооо{w}, пижамная вечеринка Владов"
+    name_vladP "Других не пускаем"
+    name_vladM "Будем пить вино и обсуждать мальчиков"
+    name_vladP "Да{w}, хихихих"
+    hide image_ii 
+    hide image_vladM
+    hide image_vladP
+    hide image_ura
+    with dissolve
+    th "Мы начали расходиться{w}, я и Влад заняли комнату на втором этаже{w}, а Юржи и Слейвс потопали в комнату которая была на первом, прямо под нашей"
+    show image_ii at right
+    show image_vladP 
+    show image_ura at fleft
+    show image_vladM at left
+    with dissolve
+    th "Через час разбора вещей, мы встретились в гостинной"
+    name_ura "Так{w}, предлагаю сначала пойти покушать в кафе{w}, а потом можно уже и разгуляться"
+    name_ii "Согласен"
+    th "Мы вышли на улицу и потопали в глубь города"
+
+    scene image_ahye with dissolve
+    show image_ii at left
+    show image_vladP at right
+    show image_ura 
+    show image_vladM at fleft
+    with dissolve
+    name_vladP "Афагэт{w}, как же много тут всякого"
+    name_ii "Давайте сюда залетим"
+    th "Сява указал на летнюю кафешку с шатром{w}, имеющую название \"Ах, у Эли\""
+    name_ura "Хахах{w}, интересное название{w}, ну погнали"
+    
+    scene image_cafev with dissolve
+    show image_ii at right
+    show image_vladP 
+    show image_ura at fleft
+    show image_vladM at left
+    with dissolve
+    th "Вот мы оказались внутри и сели за первый попавшийся столик{w}, самое смешное что мы были единственными в этом кафе"
+    name_ura "Ну сразу видно{w}, место популярное пиздец"
+    th "К нам подошёл официант"
+    show image_oficnegr at fright with dissolve
+    offnik "Здравствуйте{w}, меня зовут Андрей, сегодня я ваш официант{w}, что хотите заказать"
+    name_vladM "Привяу{w}, кароч, мне сочный бургер, картошку среднюю и колу"
+    offnik "Хорошо{w}, вам хлеб нужен?"
+    name_vladM "Да{w}, чёрный можно...{w}а у вас случаем твикса нет?"
+    offnik "Есть{w}, желаете?"
+    name_vladM "Да{w}, несите"
+    name_ura "Мне пожалуйста салат цезарь и порцию шашлыка{w}, ну и колу давате"
+    name_vladP "Я бы не отказался от трёх куриных ножек и порции картошки фри{w}, из напитков хочу шоколадный милкшейк"
+    name_ii "А мне пожалуйста маленькую пиццу, картошку и Фанту пожалуйста"
+    offnik "Ваши заказы приняты{w}, в течении двадцати минут ожидайте"
+    hide image_oficnegr with dissolve
+    name_vladP "Наконец-то нормальная блять еда{w}, а то от дошика уже тошнит"
+    name_ura "Да не говори"
+    name_ii "Чуваки{w}, думаю это будут лучшие каникулы в нашей жизни"
+    name_vladM "Ураааа"
+    show image_sp20min with dissolve
+    $ renpy.pause(3)
+    hide image_sp20min with dissolve
+    show image_oficnegr at fright with dissolve
+    offnik "Прошу{w}, ваш большой заказ"
+    hide image_oficnegr with dissolve
+    name_ura "Спасибо большое{w}, ну что чувачьё{w}, налетаем"
+    th "Плтоно наевшись{w}, мы вышли на улицу"
+    
+    scene image_ylisa with dissolve
+    show image_ii at fleft
+    show image_vladP at right
+    show image_ura at left
+    show image_vladM 
+    with dissolve
+    name_vladP "Так{w}, как гвориться{w}, плотно поев надо плотно наебениться"
+    name_ura "Кто так говорит?"
+    name_vladP "Теперь я"
+    th "Буквально на этой улицы стоял бар из которого громко играла музыка"
+    
+    show image_barr with dissolve
+    show image_ii 
+    show image_vladP at left
+    show image_ura at right
+    show image_vladM at fleft
+    with dissolve
+    name_vladM "Нормальное местечко{w}, ещё бы музыка нормальная играла{w}, то вообще бы заебись было"
+    name_ura "Да сойдёт"
+    th "Усевшись за столик{w}, я принялся толкать речь"
+    name_vladP "Итак{w}, пацаны и пацанессы{w}, хочу поднять этот стакан за то{w}, что бы эти канкулы прошли ахуенно и больше без каких либо происшествий"
+    name_ii "Да{w}, думаю уже ничего плохого произойти не должно"
+    th "Мы принялись глушить стакан за стаканом{w}, и я не заметил как сознание полностью покаинуло меня"
+    show blink
+    th "Где я?"
+    th "Это рай?{w} Может ад?"
+    th "Вокруг была лишь беспросветная тьма и ничего больше"
+    th "Может я набухался и умер?"
+    th "Ну пиздец{w}, у меня же там родители, брат, друзья остались{w}, а я так просто умер"
+    th "Почему то в этой темноте я слышал звук прибоя"
+    th "Наверно так выглядит смерть{w}, но почему прибой?"
+    hide blink
+    show unblink
+
+    scene image_loda1 with dissolve
+    show image_vladP
+    show image_ura at left
+    show image_vladM at right
+    with dissolve
+    th "Резко тьма стала растворяться"
+    name_vladP "ЭЭээээгх{w}, кх кх"
+    name_vladP "Какого хуя?"
+    th "Передо мной была картина{w}, обычная деревянная лодка в которой лежал я, Юра и Влад"
+    th "Я бы подумал что мы уплыли в бескрайний океан{w}, но нет, лодка была прибита к берегу{w}, берег, слава богу, Байкала"
+    name_vladP "Чуваки{w}, чувакииии"
+    name_ura "Бргхм{w}, аааааа"
+    name_vladM "Влад иди нахуй{w}, тебе ещё час ехать"
+    name_vladP "Мужики вставайте{w}, что мы в лодке делаем?"
+    name_ura "Аггх{w}, ну поплавать решили"
+    name_vladP "ВЛАД ВСТАЛ НАХУЙ!"
+    th "Я стукнул Влада по макушке"
+    name_vladM "Ты плохой человек"
+    name_vladP "Где Сява?"
+    th "Я осмотрел лодку вокруг и никого не нашёл"
+    th "Тут раздался крик"
+    name_ura "Аааааааа{w}, бляяяять"
+    name_vladM "Что ты орёшь{w} и так голова болит"
+    th "К Юриной руке была привязана цепь на обратной стороне которой сидела маленькая обезянка"
+    name_vladP "Вот тебе нахуй{w}, откуда это животное взялось?"
+    name_ura "Я НЕ ЕБУ МУЖИК{w}, МЫ ЧЁ ОБЕЗЬЯНУ КУПИЛИ?"
+    name_vladM "Так, разберёмся{w}, надо Сяву искать"
+    th "Юра взял обезьяну на руки и мы вылезли из лодки"
+    name_vladP "Так все проверьте, доки у всех с собой?"
+    name_ura "У меня всё на месте"
+    name_vladM "У меня тоже{w}, стоп......{w}чего?"
+    th "Влад открыл свой паспорт"
+    name_vladP "Что такое?"
+    name_vladM "ЧУВАКИ БЛЯТЬ!"
+    th "Влад развернул паспорт в нашу сторону{w}, страница с семейным положением была заполнена"
+    name_vladM "Я ЖЕНАТ НАХУЙ!"
+    name_ura "Сука{w}, чего вообще было вчера?{w} Где Сява?{w} Я нихуя не понимаю"
+    name_vladM "БЛЯТЬ Я ЖЕНАТ ЧУВАКИ{w}, КАКОГО ХУЯ А?"
+    name_vladP "Блять{w}, ебало на куски разрывается{w},думаю надо первым делать сходить в тот бар"
+    name_ura "Да{w}, хорошая идея"
+    name_vladP "Тогда погнали"
+    th "От каждого шага хотелось ёбнуться на землю{w}, голова куржилась, ещё и жёсткое похмелье ебало мозг"
+    th "Пройдя чуть чуть, мы оказались в баре"
+
+    scene image_barr with dissolve
+    show image_vladP
+    show image_ura at cright
+    show image_vladM at right
+    show image_oficnegr at left
+    with dissolve
+    name_ura "Здравствуйте"
+    offnik "Ну привет молодёж"
+    name_vladP "Вы здесь официантом работаете?"
+    offnik "Да{w}, город маленький, много свободных вакансий"
+    name_vladP "Ладно, не столь важно"
+    name_vladP "Вы нас помните?"
+    offnik "Ну конечно!{w} Давно у нас не было таких клиентов"
+    name_vladM "У нас память отшибло к ебеням{w}, вы не знаете ли{w}, куда мы отправились после нашего феерического бухича?"
+    offnik "Я не уверен{w}, но когда вас унесло с концами{w}, тот что с портфелем и высоких начал громко орать, что-то вроде \"ХОЧУ ШЛЮХ ТРАХАТЬ, ПОЕХАЛИИИИ\""
+    name_vladP "Ну это точно Сява"
+    name_ura "Значит на этом этапе он был с нами"
+    name_vladM "Простите за нескромный вопрос{w}, а где у вас тут шлюхи?"
+    offnik "Дальше по улице{w}, и направо, там переулок"
+    name_ura "Спасибо"
+    th "Мы отправились к шлюхам"
+
+    scene image_pereyl with dissolve
+    show image_vladP
+    show image_vladM at cright
+    show image_ura at right
+    with dissolve
+    name_vladP "Ээээ{w}, здравствуйте"
+    name_ura "Здесь есть кто-нибудь?"
+    show image_gena at left with dissolve
+    gena "Аааа{w}, любимый{w}, я же сказала, как закончу на работе, приеду"
+    th "Резко выбежавшая девушка, влетела во Влада и начала его обнимать"
+    name_vladM "Девушка{w}, вы кто?"
+    gena "Зай{w}, ты чего?"
+    name_vladM "Сука{w}, да я реально тебя не знаю, вы меня с кем-то перепутали"
+    name_ura "Влад{w}, я кажется понял{w}, девушка, вы не могли бы показать графу семейного положения в паспорте"
+    gena "Да, конечно"
+    th "Она достала из кармана пасопрт, и открыла страницу с семейным положением, Юрина догадка оказалась правдой"
+    name_ura "Знакомься Влад{w}, твоя жена"
+    name_vladM "Блять{w}, это пиздец"
+    name_vladP "Девушка{w}, у нас вчера был жёсткий забух{w}, вы не могли бы рассказать что вчера здесь было?"
+    gena "Ну вы вчера приехали{w}, с вами ещё был один парень, он кричал что хочет шлюху, все дела"
+    name_ura "Ну пока звучит обычно{w}, но как так вышло что ты замужем за нашего друга"
+    gena "Ну он снял меня{w}, но вместо секса, начал рассказывать о своей жизни{w}, а позже и вовсе стал признаваться мне в любви{w}, а ещё через пятднадцать минут сделал мне предложение"
+    name_vladM "И ты так просто согласилась?"
+    gena "Ну да{w}, ты был такой искренний"
+    name_vladP "Так{w}, сейчас это не столь важно{w}, ты не знаешь, куда мы отправились потом?"
+    gena "Честно{w}, незнаю{w}, вы куда-то ушли, а я с милым уехали в загс"
+    name_vladP "Так{w}, значит уезжая от сюда, Сява всё ещё был с нами"
+    name_ura "Угу{w}, но вот вопрос, куда мы поехали потом"
+    name_vladM "Ну моё предположение{w}, что позже мы поехали туда, где ты, Юра, добыл обезьяну"
+    th "И правда{w}, всё это время Юра продолжал держать при себе маленькую обезянку на цепочке"
+    name_ura "Слушай{w}, зовут тебя как?"
+    gena "Агафья"
+    name_ura "Агафья{w}, где в этом городе можно теоритически было взять обезьяну"
+    gena "Ну варика два{w}, зоопарк или приезжий цирк"
+    gena "Но вот только зоопарк строго охраняется и вы при большом желании, в таком состоянии, даже бы не подошли к входу"
+    name_vladP "Так{w}, ну значит идём к цирку"
+
+    scene image_cirk with dissolve
+    th "Не долго топая, мы оказались у огромного шатра"
+    name_vladP "По теории, внутри некого{w}, сегодня у них выходной"
+
+    scene image_cirkv with dissolve
+    show image_vladP at cright
+    show image_ura 
+    show image_vladM at right
+    with dissolve
+    th "Мы зашли во внутрь"
+    name_ura "Алооу{w}, здесь есть кто-нибудь"
+    name_vladP "Тут никого нет{w}, то есть мы просто пришли и спизидили обезьяну?"
+    name_vladM "Судя по всему да"
+    name_ura "Блять{w}, мы удивительные идиоты"
+    name_vladP "Блять это тупик{w}, дальше нет проводников"
+    name_ura "Вопрос, где и в какой момент мы проебали Сяву"
+
+    scene image_cirk with dissolve
+    show image_vladP 
+    show image_ura at left
+    show image_vladM at cleft
+    with dissolve
+    th "Мы вышли на улицу"
+    show image_bomj at right with dissolve
+    bomg "Егхехе{w}, удивительно что вы ещё живы?"
+    name_vladP "Чего нахуй?{w} Чё те надо алкаш?"
+    bomg "Ну вчера же до вас докопались те наркоманы"
+    name_ura "Какие нахуй наркоманы дед?"
+    bomg "Ну у нашего городка есть проблема{w}, в городеесть групка наркоманов, да к тому же они ещё и сатанисты{w}, ходит слушок что у них где-то есть место где они творят какие-то ужасные вещи"
+    name_vladM "Ахуеть{w}, а мы тут причём?{w} Что они нам вчера говорили"
+    bomg "А вы что{w}, не помните ничего?"
+    name_vladP "БЛЯТЬ НЕТ!{w} ВОТ ИМЕННО!{w} МЫ НИХУЯ НЕ ПОМНИМ ДЕД-ПЕРДЕД"
+    bomg "Ну вы вышли из шотра с обезьяной и к вам подошли эти парни"
+    name_vladP "Так{w}, ну а потом?"
+    bomg "Они предложили что бы вы отдали им обезьяну для всяких их штучек"
+    name_vladM "Так{w}, ну обезьяна у нас"
+    bomg "Ну они уходили с каким то парнем"
+    name_vladM "Так стоп...."
+    name_ura "Блять..."
+    name_vladP "Твою мать{w}, мы кажется им отдали Сяву, вместо обезьяны"
+    bomg "Ахуенные вы друзья"
+    name_ura "А сосни ка хуйца старый"
+    th "Мысль не укладывалась в голове{w}, как мы могли оставить обезяну, но при этом отдать им Сяву"
+    name_vladP "Сука{w} СУКА{w} ГДЕ НАМ ТЕПЕРЬ ЕГО ИСКАТЬ?{w} ОН ВООБЩЕ ЖИВ?"
+    name_ura "Так{w}, вспоминаем{w}, куда теоритически его могли увести"
+    name_vladM "ДА ОТКУДА МЫ ЕБЁМ{w}, МЫ ЗДЕСЬ ОДИН БЛЯДСКИЙ ДЕНЬ"
+    name_vladP "Я кажется понял"
+    name_ura "А?"
+    name_vladP "Мы хотели вернуть Сяву{w}, но вырубились"
+    name_vladM "Так{w}, и что?"
+    name_vladP "А где мы проснулись?"
+    name_ura "Ааааа{w}, думаешь он на том берегу?"
+    name_vladP "Думаю да"
+    name_vladM "Тогда погнали"
+
+    scene image_loda1 with dissolve
+    th "За пару минут мы уже стояли на каменном пляже{w}, у той самой лодки"
+    name_ura "Толкайте её в воду"
+    
+    scene image_loda2 with dissolve
+    th "Еле как сдвинув её с места и перерезав канат{w}, мы отчалили"
+    th "Грести вёслами оказалось энергозатратней чем мы предпологали{w}, поэтому путь занял минут сорок, но мы наконец-то приплыли"
+    
+    scene image_izba1 with dissolve 
+    show image_vladP at right
+    show image_ura at cright
+    show image_vladM 
+    with dissolve
+    name_vladP "Блять{w}, тут так жутко"
+    name_ura "Смотрите{w}, избушка"
+    th "Мы очень тихо подошли к ней{w}, стараясь не шуметь хрустом веток и листиков"
+    th "Только я хотел обсудить план{w}, как вдруг Влад с палкой в руке влетел внутpь здания"
+
+    scene image_izba2 with dissolve
+    show image_vladP at cright
+    show image_ura 
+    show image_vladM at right
+    show image_ii at fleft
+    show image_jonisini at left
+    with dissolve
+    name_vladM "ВСЕМ НАХУЙ ОСТАВАТЬСЯ НА МЕСТАХ{w}, А ИНАЧЕ ВСЕХ К ХУЯМ ПЕРЕЕБАШУ"
+    th "Картина была до пизды ужасающая{w}, на столу лежал Сява, который был живой{w}, но спал{w}, а перед ним стояли три голых парня{w}, они все были измазаны какими-то красками, а в руках у них были охапки трав, которые тлели и пепел ссыпался прям на сяву"
+    name_vladM "Мать моя женщина...."
+    hide image_jonisini with dspr
+    th "Точно не помню что в тот момент произошло{w}, но спустя буквально пару мгновений парни лежали на полу{w}, а Влад с бешеным взглядом смотрел на них{w}, держа в руке окрававленную палку........{w}чёрный импульс?" with hpunch
+    name_ura "А ты хорош мужик"
+    show blink 
+    scene image_barr
+    show image_vladP at left
+    show image_ura at cright
+    show image_vladM 
+    show image_ii at right
+    $ renpy.pause(3)
+    hide blink
+    show unblink
+    name_ii "История звучит как полный бред{w}, вы меня точно не разыгрываете?"
+    name_ura "Ты думаешь мы бы выдумали такое?"
+    name_ii "Где тогда обезьяна?"
+    name_ura "Я отдал её тому бомжу{w}, он теперь деньги с помощью неё лутает"
+    name_ii "А как же жена Влада?"
+    th "Влад открыл паспорт"
+    name_vladM "Впитывай{w}, съездили, развелись"
+    name_ii "А те парни?"
+    name_vladP "Они оказывается здесь знаменитости, но никому никогда реального вреда не причинили{w}, ты же по факту добровольно с ними пошёл"
+    name_ii "Блять{w}, незнаю как вы{w}, но я точно до конца каникул пить не собираюсь......{w} может быть"
+
+
 
 label ne_vipil_tabletki:
         
