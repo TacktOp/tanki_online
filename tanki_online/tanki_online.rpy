@@ -61,6 +61,7 @@ init:
     $ sound_govno                    = "mods/tanki_online/sound/Султан Лагучев - Горький Вкус (megapesni.com).mp3"
     $ sound_proboi                   = "mods/tanki_online/sound/прибойПенис.mp3"
     $ sound_ytro                     = "mods/tanki_online/sound/birds-singing.mp3"
+    $ sound_les                      = "mods/tanki_online/sound/les.mp3"
 #endregion
 
 
@@ -1438,11 +1439,12 @@ label akt1:
     show image_ura at cright
     show image_vladM 
     with dissolve
-    
+    play music sound_les fadein 0.5
     name_vladP "Блять{w}, тут так жутко"
     name_ura "Смотрите{w}, избушка"
     th "Мы очень тихо подошли к ней{w}, стараясь не шуметь хрустом веток и листиков"
     th "Только я хотел обсудить план{w}, как вдруг Влад с палкой в руке влетел внутpь здания"
+    stop music fadeout 0.5
 
     scene image_izba2 with dissolve
     show image_vladP at cright
@@ -1451,11 +1453,13 @@ label akt1:
     show image_ii at fleft
     show image_jonisini at left
     with dissolve
+    play music music_list['doomed_to_be_defeated'] fadein 0.5
     name_vladM "ВСЕМ НАХУЙ ОСТАВАТЬСЯ НА МЕСТАХ{w}, А ИНАЧЕ ВСЕХ К ХУЯМ ПЕРЕЕБАШУ"
     th "Картина была до пизды ужасающая{w}, на столу лежал Сява, который был живой{w}, но спал{w}, а перед ним стояли три голых парня{w}, они все были измазаны какими-то красками, а в руках у них были охапки трав, которые тлели и пепел ссыпался прям на сяву"
     name_vladM "Мать моя женщина...."
     hide image_jonisini with dspr
     th "Точно не помню что в тот момент произошло{w}, но спустя буквально пару мгновений парни лежали на полу{w}, а Влад с бешеным взглядом смотрел на них{w}, держа в руке окрававленную палку........{w}чёрный импульс?" with hpunch
+    stop music fadeout 0.5
     name_ura "А ты хорош мужик"
     show blink 
     scene image_barr
