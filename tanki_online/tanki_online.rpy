@@ -53,7 +53,10 @@ init:
     $ sound_zvukEzdi                 = "mods/tanki_online/sound/звук_езды.mp3"
     $ sound_sverchki                 = "mods/tanki_online/sound/звуки_сверчков.mp3"
     $ sound_skrimer                  = "mods/tanki_online/sound/skrimer.mp3"
-
+    $ sound_rechka                   = "mods/tanki_online/sound/Sound_17860.mp3"
+    $ sound_listik                   = "mods/tanki_online/sound/london-oxford-street_z1pkjle_.mp3"
+    $ sound_domig                    = "mods/tanki_online/sound/f28e6f472bd6f38.mp3"
+    $ sound_classikmzk               = "mods/tanki_online/sound/The Four Seasons, Op. 8.mp3"
 #endregion
 
 
@@ -976,6 +979,7 @@ label akt1:
     scene black with dissolve
 
     scene image_tachka with dissolve
+    play music sound_carEdet fadein 0.5
     th "На большой скорости, дорога сливалась в одну большую полосу, а мелькающие за окном поля и леса, уже нихуёво так надоедали"
     name_ii "Блять{w}, как же я заебался{w}, кто нибудь может сменить меня?"
     th "В ответ была лишь тишина{w}, Юра и Влад спали на заднем сиденье, а я смотрел в окно, слушая музыку в наушниках"
@@ -995,11 +999,13 @@ label akt1:
     name_ii "Если остановлюсь, сменишь меня?"
     name_vladP "Да сменю, сменю, заебал"
     name_ii "Ура"
+    stop music fadeout 0.5
 
     scene image_bereg with dissolve
     show image_vladM at right
     show image_vladP at fright
     with dissolve
+    play music sound_rechka fadein 0.5
     th "Сява свернул к песчаному бережку у самой воды{w}, место было замечательное, вокруг не одного дерева"
     th "Мы с Владом вышли из тачки{w}, Сява же скрипя, перебрался на заднее сиденье"
     name_vladM "Аааагх{w}, как же хорошой, свежо!"
@@ -1055,8 +1061,10 @@ label akt1:
     hide image_ura
     with dissolve
     th "Мы сели в машину и действительно{w}, проехав по хуйне, перед нами открылся городок прям у огромного озера, вот оно - начало пиздатейших каникул"
-    
+    stop music fadeout 0.5
+
     scene image_list1 with dissolve
+    play music sound_carEdet fadein 0.5
     th "Перед нами открылось удивительное место{w}, небольшой городок у берега одного из самых крутых водоёмов в мире"
     name_ii "Пацаны, это разъёб"
     name_vladP "Дааа{w}, прямо как в детстве"
@@ -1072,8 +1080,10 @@ label akt1:
     name_ii "Я за неплохие деньги, продал код"
     name_vladP "Ебаааать{w}, смотри так и до собственной компании далеко"
     name_ii "Да не{w}, как бред звучит"
+    stop music fadeout 0.5
     
     scene image_list2 with dissolve
+    play music sound_listik fadein 0.5
     th "Мы захели в город{w}, туристы конечно были, но не так много как я себе представлял"
     name_vladM "Афагэт{w}, как же круто"
     name_ura "Сява{w}, а где домик то твой?"
@@ -1083,12 +1093,14 @@ label akt1:
     name_ii "Хахахах{w}, будет весело"
     th "Сам по себе городок не большой{w}, поэтому спустя несколько минут мы уже оказались на краю городка, у домика сявы"
     
+    stop music fadeout 0.5
     scene image_domS with dissolve
     show image_ii at left
     show image_vladM at right
     show image_vladP at cright
     show image_ura
-    with dissolve    
+    with dissolve
+    play music sound_domig fadein 0.5 
     name_ii "Ну вот это чудовище"
     name_ura "Ахуеть мужик, это же пиздец"
     name_ii "Да ладно{w}, я же не купил его{w}, а снял на полторы недели.."
@@ -1104,11 +1116,13 @@ label akt1:
     name_ii "Пусть эти тут себе что-нибудь куда-нибудь пихают{w}, а мы пойдём заселяться"
     name_vladP "Ле го"
     th "Мы зашли во внутрь"
+    stop music fadeout 0.5
 
     scene image_gostin with dissolve
     show image_ii
     show image_vladP at right
     with dissolve
+    play music sound_classikmzk fadein 0.5
     name_vladP "Пиздец харомы брат"
     name_ii "Я на сайте видел огромные виллы, но это то, на что денег хватило"
     name_vladP "Да чувак это разъёб{w}, не ожидал от тебя"
