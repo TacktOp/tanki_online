@@ -57,6 +57,10 @@ init:
     $ sound_listik                   = "mods/tanki_online/sound/london-oxford-street_z1pkjle_.mp3"
     $ sound_domig                    = "mods/tanki_online/sound/f28e6f472bd6f38.mp3"
     $ sound_classikmzk               = "mods/tanki_online/sound/The Four Seasons, Op. 8.mp3"
+    $ sound_obozekakoi               = "mods/tanki_online/sound/natali-o-bozhe-kakojj-muzhchina.mp3"
+    $ sound_govno                    = "mods/tanki_online/sound/Султан Лагучев - Горький Вкус (megapesni.com).mp3"
+    $ sound_proboi                   = "mods/tanki_online/sound/прибойПенис.mp3"
+    $ sound_ytro                     = "mods/tanki_online/sound/birds-singing.mp3"
 #endregion
 
 
@@ -1168,6 +1172,7 @@ label akt1:
     name_ura "Так{w}, предлагаю сначала пойти покушать в кафе{w}, а потом можно уже и разгуляться"
     name_ii "Согласен"
     th "Мы вышли на улицу и потопали в глубь города"
+    stop music fadeout 0.5
 
     scene image_ahye with dissolve
     show image_ii at left
@@ -1175,10 +1180,12 @@ label akt1:
     show image_ura 
     show image_vladM at fleft
     with dissolve
+    play music sound_listik fadein 0.5
     name_vladP "Афагэт{w}, как же много тут всякого"
     name_ii "Давайте сюда залетим"
     th "Сява указал на летнюю кафешку с шатром{w}, имеющую название \"Ах, у Эли\""
     name_ura "Хахах{w}, интересное название{w}, ну погнали"
+    stop music fadeout 0.5
     
     scene image_cafev with dissolve
     show image_ii at right
@@ -1186,6 +1193,7 @@ label akt1:
     show image_ura at fleft
     show image_vladM at left
     with dissolve
+    play music sound_obozekakoi fadein 0.5
     th "Вот мы оказались внутри и сели за первый попавшийся столик{w}, самое смешное что мы были единственными в этом кафе"
     name_ura "Ну сразу видно{w}, место популярное пиздец"
     th "К нам подошёл официант"
@@ -1213,6 +1221,7 @@ label akt1:
     hide image_oficnegr with dissolve
     name_ura "Спасибо большое{w}, ну что чувачьё{w}, налетаем"
     th "Плтоно наевшись{w}, мы вышли на улицу"
+    stop music fadeout 0.5
     
     scene image_ylisa with dissolve
     show image_ii at fleft
@@ -1220,10 +1229,12 @@ label akt1:
     show image_ura at left
     show image_vladM 
     with dissolve
+    play music sound_listik fadein 0.5
     name_vladP "Так{w}, как гвориться{w}, плотно поев надо плотно наебениться"
     name_ura "Кто так говорит?"
     name_vladP "Теперь я"
     th "Буквально на этой улицы стоял бар из которого громко играла музыка"
+    stop music fadeout 0.5
     
     show image_barr with dissolve
     show image_ii 
@@ -1231,18 +1242,21 @@ label akt1:
     show image_ura at right
     show image_vladM at fleft
     with dissolve
+    play music sound_govno fadein 0.5
     name_vladM "Нормальное местечко{w}, ещё бы музыка нормальная играла{w}, то вообще бы заебись было"
     name_ura "Да сойдёт"
     th "Усевшись за столик{w}, я принялся толкать речь"
     name_vladP "Итак{w}, пацаны и пацанессы{w}, хочу поднять этот стакан за то{w}, что бы эти канкулы прошли ахуенно и больше без каких либо происшествий"
     name_ii "Да{w}, думаю уже ничего плохого произойти не должно"
     th "Мы принялись глушить стакан за стаканом{w}, и я не заметил как сознание полностью покаинуло меня"
+    stop music fadeout 0.5
     show blink
     th "Где я?"
     th "Это рай?{w} Может ад?"
     th "Вокруг была лишь беспросветная тьма и ничего больше"
     th "Может я набухался и умер?"
     th "Ну пиздец{w}, у меня же там родители, брат, друзья остались{w}, а я так просто умер"
+    play music sound_proboi fadein 0.5
     th "Почему то в этой темноте я слышал звук прибоя"
     th "Наверно так выглядит смерть{w}, но почему прибой?"
     hide blink
@@ -1291,6 +1305,7 @@ label akt1:
     name_vladP "Тогда погнали"
     th "От каждого шага хотелось ёбнуться на землю{w}, голова куржилась, ещё и жёсткое похмелье ебало мозг"
     th "Пройдя чуть чуть, мы оказались в баре"
+    stop music fadeout 0.5
 
     scene image_barr with dissolve
     show image_vladP
@@ -1319,6 +1334,7 @@ label akt1:
     show image_vladM at cright
     show image_ura at right
     with dissolve
+    play music sound_ytro fadein 0.5
     name_vladP "Ээээ{w}, здравствуйте"
     name_ura "Здесь есть кто-нибудь?"
     show image_gena at left with dissolve
@@ -1405,20 +1421,24 @@ label akt1:
     name_ura "Ааааа{w}, думаешь он на том берегу?"
     name_vladP "Думаю да"
     name_vladM "Тогда погнали"
+    stop music fadeout 0.5
 
     scene image_loda1 with dissolve
+    play music sound_proboi fadein 0.5
     th "За пару минут мы уже стояли на каменном пляже{w}, у той самой лодки"
     name_ura "Толкайте её в воду"
     
     scene image_loda2 with dissolve
     th "Еле как сдвинув её с места и перерезав канат{w}, мы отчалили"
     th "Грести вёслами оказалось энергозатратней чем мы предпологали{w}, поэтому путь занял минут сорок, но мы наконец-то приплыли"
-    
+    stop music fadeout 0.5
+
     scene image_izba1 with dissolve 
     show image_vladP at right
     show image_ura at cright
     show image_vladM 
     with dissolve
+    
     name_vladP "Блять{w}, тут так жутко"
     name_ura "Смотрите{w}, избушка"
     th "Мы очень тихо подошли к ней{w}, стараясь не шуметь хрустом веток и листиков"
